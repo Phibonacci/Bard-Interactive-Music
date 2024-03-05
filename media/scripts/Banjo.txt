@@ -1,0 +1,484 @@
+module BardInteractiveMusic {
+    sound BanjoC2 {
+        category = EHE: Main,
+        loop = false,
+        is3D = true,
+        clip {
+            file = media/sound/Kawai-K11-Banjo/ogg/C5.ogg,
+            distanceMax = 650,
+            reverbFactor = 0.1,
+            volume = 0.7,
+            pitch = 0.125,
+        }
+    }
+
+    sound BanjoCs2 {
+        category = EHE: Main,
+        loop = false,
+        is3D = true,
+        clip {
+            file = media/sound/Kawai-K11-Banjo/ogg/C5.ogg,
+            distanceMax = 650,
+            reverbFactor = 0.1,
+            volume = 0.7,
+            pitch = 0.1324328868,
+        }
+    }
+
+    sound BanjoD2 {
+        category = EHE: Main,
+        loop = false,
+        is3D = true,
+        clip {
+            file = media/sound/Kawai-K11-Banjo/ogg/C5.ogg,
+            distanceMax = 650,
+            reverbFactor = 0.1,
+            volume = 0.7,
+            pitch = 0.1403077560,
+        }
+    }
+
+    sound BanjoDs2 {
+        category = EHE: Main,
+        loop = false,
+        is3D = true,
+        clip {
+            file = media/sound/Kawai-K11-Banjo/ogg/C5.ogg,
+            distanceMax = 650,
+            reverbFactor = 0.1,
+            volume = 0.7,
+            pitch = 0.1486508894,
+        }
+    }
+
+    sound BanjoE2 {
+        category = EHE: Main,
+        loop = false,
+        is3D = true,
+        clip {
+            file = media/sound/Kawai-K11-Banjo/ogg/C5.ogg,
+            distanceMax = 650,
+            reverbFactor = 0.1,
+            volume = 0.7,
+            pitch = 0.1574901312,
+        }
+    }
+
+    sound BanjoF2 {
+        category = EHE: Main,
+        loop = false,
+        is3D = true,
+        clip {
+            file = media/sound/Kawai-K11-Banjo/ogg/C5.ogg,
+            distanceMax = 650,
+            reverbFactor = 0.1,
+            volume = 0.7,
+            pitch = 0.1668549818,
+        }
+    }
+
+    sound BanjoFs2 {
+        category = EHE: Main,
+        loop = false,
+        is3D = true,
+        clip {
+            file = media/sound/Kawai-K11-Banjo/ogg/C5.ogg,
+            distanceMax = 650,
+            reverbFactor = 0.1,
+            volume = 0.7,
+            pitch = 0.1767766953,
+        }
+    }
+
+    sound BanjoG2 {
+        category = EHE: Main,
+        loop = false,
+        is3D = true,
+        clip {
+            file = media/sound/Kawai-K11-Banjo/ogg/C5.ogg,
+            distanceMax = 650,
+            reverbFactor = 0.1,
+            volume = 0.7,
+            pitch = 0.1872883846,
+        }
+    }
+
+    sound BanjoGs2 {
+        category = EHE: Main,
+        loop = false,
+        is3D = true,
+        clip {
+            file = media/sound/Kawai-K11-Banjo/ogg/C5.ogg,
+            distanceMax = 650,
+            reverbFactor = 0.1,
+            volume = 0.7,
+            pitch = 0.1984251315,
+        }
+    }
+
+    sound BanjoA2 {
+        category = EHE: Main,
+        loop = false,
+        is3D = true,
+        clip {
+            file = media/sound/Kawai-K11-Banjo/ogg/C5.ogg,
+            distanceMax = 650,
+            reverbFactor = 0.1,
+            volume = 0.7,
+            pitch = 0.2102241038,
+        }
+    }
+
+    sound BanjoAs2 {
+        category = EHE: Main,
+        loop = false,
+        is3D = true,
+        clip {
+            file = media/sound/Kawai-K11-Banjo/ogg/C5.ogg,
+            distanceMax = 650,
+            reverbFactor = 0.1,
+            volume = 0.7,
+            pitch = 0.2227246795,
+        }
+    }
+
+    sound BanjoB2 {
+        category = EHE: Main,
+        loop = false,
+        is3D = true,
+        clip {
+            file = media/sound/Kawai-K11-Banjo/ogg/C5.ogg,
+            distanceMax = 650,
+            reverbFactor = 0.1,
+            volume = 0.7,
+            pitch = 0.2359685782,
+        }
+    }
+
+    sound BanjoC3 {
+        category = EHE: Main,
+        loop = false,
+        is3D = true,
+        clip {
+            file = media/sound/Kawai-K11-Banjo/ogg/C5.ogg,
+            distanceMax = 650,
+            reverbFactor = 0.1,
+            volume = 0.7,
+            pitch = 0.25,
+        }
+    }
+
+    sound BanjoCs3 {
+        category = EHE: Main,
+        loop = false,
+        is3D = true,
+        clip {
+            file = media/sound/Kawai-K11-Banjo/ogg/C5.ogg,
+            distanceMax = 650,
+            reverbFactor = 0.1,
+            volume = 0.7,
+            pitch = 0.2648657736,
+        }
+    }
+
+    sound BanjoD3 {
+        category = EHE: Main,
+        loop = false,
+        is3D = true,
+        clip {
+            file = media/sound/Kawai-K11-Banjo/ogg/C5.ogg,
+            distanceMax = 650,
+            reverbFactor = 0.1,
+            volume = 0.7,
+            pitch = 0.2806155121,
+        }
+    }
+
+    sound BanjoDs3 {
+        category = EHE: Main,
+        loop = false,
+        is3D = true,
+        clip {
+            file = media/sound/Kawai-K11-Banjo/ogg/C5.ogg,
+            distanceMax = 650,
+            reverbFactor = 0.1,
+            volume = 0.7,
+            pitch = 0.2973017788,
+        }
+    }
+
+    sound BanjoE3 {
+        category = EHE: Main,
+        loop = false,
+        is3D = true,
+        clip {
+            file = media/sound/Kawai-K11-Banjo/ogg/C5.ogg,
+            distanceMax = 650,
+            reverbFactor = 0.1,
+            volume = 0.7,
+            pitch = 0.3149802625,
+        }
+    }
+
+    sound BanjoF3 {
+        category = EHE: Main,
+        loop = false,
+        is3D = true,
+        clip {
+            file = media/sound/Kawai-K11-Banjo/ogg/C5.ogg,
+            distanceMax = 650,
+            reverbFactor = 0.1,
+            volume = 0.7,
+            pitch = 0.3337099635,
+        }
+    }
+
+    sound BanjoFs3 {
+        category = EHE: Main,
+        loop = false,
+        is3D = true,
+        clip {
+            file = media/sound/Kawai-K11-Banjo/ogg/C5.ogg,
+            distanceMax = 650,
+            reverbFactor = 0.1,
+            volume = 0.7,
+            pitch = 0.3535533906,
+        }
+    }
+
+    sound BanjoG3 {
+        category = EHE: Main,
+        loop = false,
+        is3D = true,
+        clip {
+            file = media/sound/Kawai-K11-Banjo/ogg/C5.ogg,
+            distanceMax = 650,
+            reverbFactor = 0.1,
+            volume = 0.7,
+            pitch = 0.3745767692,
+        }
+    }
+
+    sound BanjoGs3 {
+        category = EHE: Main,
+        loop = false,
+        is3D = true,
+        clip {
+            file = media/sound/Kawai-K11-Banjo/ogg/C5.ogg,
+            distanceMax = 650,
+            reverbFactor = 0.1,
+            volume = 0.7,
+            pitch = 0.3968502630,
+        }
+    }
+
+    sound BanjoA3 {
+        category = EHE: Main,
+        loop = false,
+        is3D = true,
+        clip {
+            file = media/sound/Kawai-K11-Banjo/ogg/C5.ogg,
+            distanceMax = 650,
+            reverbFactor = 0.1,
+            volume = 0.7,
+            pitch = 0.4204482076,
+        }
+    }
+
+    sound BanjoAs3 {
+        category = EHE: Main,
+        loop = false,
+        is3D = true,
+        clip {
+            file = media/sound/Kawai-K11-Banjo/ogg/C5.ogg,
+            distanceMax = 650,
+            reverbFactor = 0.1,
+            volume = 0.7,
+            pitch = 0.4454493591,
+        }
+    }
+
+    sound BanjoB3 {
+        category = EHE: Main,
+        loop = false,
+        is3D = true,
+        clip {
+            file = media/sound/Kawai-K11-Banjo/ogg/C5.ogg,
+            distanceMax = 650,
+            reverbFactor = 0.1,
+            volume = 0.7,
+            pitch = 0.4719371563,
+        }
+    }
+
+    sound BanjoC4 {
+        category = EHE: Main,
+        loop = false,
+        is3D = true,
+        clip {
+            file = media/sound/Kawai-K11-Banjo/ogg/C5.ogg,
+            distanceMax = 650,
+            reverbFactor = 0.1,
+            volume = 0.7,
+            pitch = 0.5,
+        }
+    }
+
+
+    sound BanjoCs4 {
+        category = EHE: Main,
+        loop = false,
+        is3D = true,
+        clip {
+            file = media/sound/Kawai-K11-Banjo/ogg/C5.ogg,
+            distanceMax = 650,
+            reverbFactor = 0.1,
+            volume = 0.7,
+            pitch = 0.5297315472,
+        }
+    }
+
+
+    sound BanjoD4 {
+        category = EHE: Main,
+        loop = false,
+        is3D = true,
+        clip {
+            file = media/sound/Kawai-K11-Banjo/ogg/C5.ogg,
+            distanceMax = 650,
+            reverbFactor = 0.1,
+            volume = 0.7,
+            pitch = 0.5612310242,
+        }
+    }
+
+
+    sound BanjoDs4 {
+        category = EHE: Main,
+        loop = false,
+        is3D = true,
+        clip {
+            file = media/sound/Kawai-K11-Banjo/ogg/C5.ogg,
+            distanceMax = 650,
+            reverbFactor = 0.1,
+            volume = 0.7,
+            pitch = 0.5946035575,
+        }
+    }
+
+    sound BanjoE4 {
+        category = EHE: Main,
+        loop = false,
+        is3D = true,
+        clip {
+            file = media/sound/Kawai-K11-Banjo/ogg/C5.ogg,
+            distanceMax = 650,
+            reverbFactor = 0.1,
+            volume = 0.7,
+            pitch = 0.6299605249,
+        }
+    }
+
+    sound BanjoF4 {
+        category = EHE: Main,
+        loop = false,
+        is3D = true,
+        clip {
+            file = media/sound/Kawai-K11-Banjo/ogg/C5.ogg,
+            distanceMax = 650,
+            reverbFactor = 0.1,
+            volume = 0.7,
+            pitch = 0.6674199271,
+        }
+    }
+
+    sound BanjoFs4 {
+        category = EHE: Main,
+        loop = false,
+        is3D = true,
+        clip {
+            file = media/sound/Kawai-K11-Banjo/ogg/C5.ogg,
+            distanceMax = 650,
+            reverbFactor = 0.1,
+            volume = 0.7,
+            pitch = 0.7071067812,
+        }
+    }
+
+    sound BanjoG4 {
+        category = EHE: Main,
+        loop = false,
+        is3D = true,
+        clip {
+            file = media/sound/Kawai-K11-Banjo/ogg/C5.ogg,
+            distanceMax = 650,
+            reverbFactor = 0.1,
+            volume = 0.7,
+            pitch = 0.7491535384,
+        }
+    }
+
+    sound BanjoGs4 {
+        category = EHE: Main,
+        loop = false,
+        is3D = true,
+        clip {
+            file = media/sound/Kawai-K11-Banjo/ogg/C5.ogg,
+            distanceMax = 650,
+            reverbFactor = 0.1,
+            volume = 0.7,
+            pitch = 0.7937005260,
+        }
+    }
+
+    sound BanjoA4 {
+        category = EHE: Main,
+        loop = false,
+        is3D = true,
+        clip {
+            file = media/sound/Kawai-K11-Banjo/ogg/C5.ogg,
+            distanceMax = 650,
+            reverbFactor = 0.1,
+            volume = 0.7,
+            pitch = 0.8408964153,
+        }
+    }
+
+    sound BanjoAs4 {
+        category = EHE: Main,
+        loop = false,
+        is3D = true,
+        clip {
+            file = media/sound/Kawai-K11-Banjo/ogg/C5.ogg,
+            distanceMax = 650,
+            reverbFactor = 0.1,
+            volume = 0.7,
+            pitch = 0.8908987181,
+        }
+    }
+
+    sound BanjoB4 {
+        category = EHE: Main,
+        loop = false,
+        is3D = true,
+        clip {
+            file = media/sound/Kawai-K11-Banjo/ogg/C5.ogg,
+            distanceMax = 650,
+            reverbFactor = 0.1,
+            volume = 0.7,
+            pitch = 0.9438743127,
+        }
+    }
+
+    sound BanjoC5 {
+        category = EHE: Main,
+        loop = false,
+        is3D = true,
+        clip {
+            file = media/sound/Kawai-K11-Banjo/ogg/C5.ogg,
+            distanceMax = 650,
+            reverbFactor = 0.1,
+            volume = 0.7,
+        }
+    }
+}

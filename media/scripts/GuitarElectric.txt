@@ -1,0 +1,472 @@
+module BardInteractiveMusic {
+    sound GuitarElectricC2 {
+        category = EHE: Main,
+        loop = false,
+        is3D = true,
+        clip {
+            file = media/sound/EGuitarFSBS-bridge-clean-small-SFZ-20220911/ogg/C2_s1_01.ogg,
+            distanceMax = 650,
+            reverbFactor = 0.1,
+            volume = 0.7,
+        }
+    }
+
+    sound GuitarElectricCs2 {
+        category = EHE: Main,
+        loop = false,
+        is3D = true,
+        clip {
+            file = media/sound/EGuitarFSBS-bridge-clean-small-SFZ-20220911/ogg/C2_s1_01.ogg,
+            distanceMax = 650,
+            reverbFactor = 0.1,
+            volume = 0.7,
+            pitch = 1.0594630944,
+        }
+    }
+
+    sound GuitarElectricD2 {
+        category = EHE: Main,
+        loop = false,
+        is3D = true,
+        clip {
+            file = media/sound/EGuitarFSBS-bridge-clean-small-SFZ-20220911/ogg/C2_s1_01.ogg,
+            distanceMax = 650,
+            reverbFactor = 0.1,
+            volume = 0.7,
+            pitch = 1.1224620483,
+        }
+    }
+
+    sound GuitarElectricDs2 {
+        category = EHE: Main,
+        loop = false,
+        is3D = true,
+        clip {
+            file = media/sound/EGuitarFSBS-bridge-clean-small-SFZ-20220911/ogg/F2_s1_01.ogg,
+            distanceMax = 650,
+            reverbFactor = 0.1,
+            volume = 0.7,
+            pitch = 0.8908987181,
+        }
+    }
+
+    sound GuitarElectricE2 {
+        category = EHE: Main,
+        loop = false,
+        is3D = true,
+        clip {
+            file = media/sound/EGuitarFSBS-bridge-clean-small-SFZ-20220911/ogg/F2_s1_01.ogg,
+            distanceMax = 650,
+            reverbFactor = 0.1,
+            volume = 0.7,
+            pitch = 0.9438743127,
+        }
+    }
+
+    sound GuitarElectricF2 {
+        category = EHE: Main,
+        loop = false,
+        is3D = true,
+        clip {
+            file = media/sound/EGuitarFSBS-bridge-clean-small-SFZ-20220911/ogg/F2_s1_01.ogg,
+            distanceMax = 650,
+            reverbFactor = 0.1,
+            volume = 0.7,
+        }
+    }
+
+    sound GuitarElectricFs2 {
+        category = EHE: Main,
+        loop = false,
+        is3D = true,
+        clip {
+            file = media/sound/EGuitarFSBS-bridge-clean-small-SFZ-20220911/ogg/F2_s1_01.ogg,
+            distanceMax = 650,
+            reverbFactor = 0.1,
+            volume = 0.7,
+            pitch = 1.0594630944,
+        }
+    }
+
+    sound GuitarElectricG2 {
+        category = EHE: Main,
+        loop = false,
+        is3D = true,
+        clip {
+            file = media/sound/EGuitarFSBS-bridge-clean-small-SFZ-20220911/ogg/F2_s1_01.ogg,
+            distanceMax = 650,
+            reverbFactor = 0.1,
+            volume = 0.7,
+            pitch = 1.1224620483,
+        }
+    }
+
+    sound GuitarElectricGs2 {
+        category = EHE: Main,
+        loop = false,
+        is3D = true,
+        clip {
+            file = media/sound/EGuitarFSBS-bridge-clean-small-SFZ-20220911/ogg/A2_s2_01.ogg,
+            distanceMax = 650,
+            reverbFactor = 0.1,
+            volume = 0.7,
+            pitch = 0.9438743127,
+        }
+    }
+
+    sound GuitarElectricA2 {
+        category = EHE: Main,
+        loop = false,
+        is3D = true,
+        clip {
+            file = media/sound/EGuitarFSBS-bridge-clean-small-SFZ-20220911/ogg/A2_s2_01.ogg,
+            distanceMax = 650,
+            reverbFactor = 0.1,
+            volume = 0.7,
+        }
+    }
+
+    sound GuitarElectricAs2 {
+        category = EHE: Main,
+        loop = false,
+        is3D = true,
+        clip {
+            file = media/sound/EGuitarFSBS-bridge-clean-small-SFZ-20220911/ogg/A2_s2_01.ogg,
+            distanceMax = 650,
+            reverbFactor = 0.1,
+            volume = 0.7,
+            pitch = 1.0594630944,
+        }
+    }
+
+    sound GuitarElectricB2 {
+        category = EHE: Main,
+        loop = false,
+        is3D = true,
+        clip {
+            file = media/sound/EGuitarFSBS-bridge-clean-small-SFZ-20220911/ogg/C3_s2_02.ogg,
+            distanceMax = 650,
+            reverbFactor = 0.1,
+            volume = 0.7,
+            pitch = 0.9438743127,
+        }
+    }
+
+    sound GuitarElectricC3 {
+        category = EHE: Main,
+        loop = false,
+        is3D = true,
+        clip {
+            file = media/sound/EGuitarFSBS-bridge-clean-small-SFZ-20220911/ogg/C3_s2_02.ogg,
+            distanceMax = 650,
+            reverbFactor = 0.1,
+            volume = 0.7,
+        }
+    }
+
+    sound GuitarElectricCs3 {
+        category = EHE: Main,
+        loop = false,
+        is3D = true,
+        clip {
+            file = media/sound/EGuitarFSBS-bridge-clean-small-SFZ-20220911/ogg/C3_s2_02.ogg,
+            distanceMax = 650,
+            reverbFactor = 0.1,
+            volume = 0.7,
+            pitch = 1.0594630944,
+        }
+    }
+
+    sound GuitarElectricD3 {
+        category = EHE: Main,
+        loop = false,
+        is3D = true,
+        clip {
+            file = media/sound/EGuitarFSBS-bridge-clean-small-SFZ-20220911/ogg/C3_s2_02.ogg,
+            distanceMax = 650,
+            reverbFactor = 0.1,
+            volume = 0.7,
+            pitch = 1.1224620483,
+        }
+    }
+
+    sound GuitarElectricDs3 {
+        category = EHE: Main,
+        loop = false,
+        is3D = true,
+        clip {
+            file = media/sound/EGuitarFSBS-bridge-clean-small-SFZ-20220911/ogg/E3_s3_01.ogg,
+            distanceMax = 650,
+            reverbFactor = 0.1,
+            volume = 0.7,
+            pitch = 0.9438743127,
+        }
+    }
+
+    sound GuitarElectricE3 {
+        category = EHE: Main,
+        loop = false,
+        is3D = true,
+        clip {
+            file = media/sound/EGuitarFSBS-bridge-clean-small-SFZ-20220911/ogg/E3_s3_01.ogg,
+            distanceMax = 650,
+            reverbFactor = 0.1,
+            volume = 0.7,
+        }
+    }
+
+    sound GuitarElectricF3 {
+        category = EHE: Main,
+        loop = false,
+        is3D = true,
+        clip {
+            file = media/sound/EGuitarFSBS-bridge-clean-small-SFZ-20220911/ogg/E3_s3_01.ogg,
+            distanceMax = 650,
+            reverbFactor = 0.1,
+            volume = 0.7,
+            pitch = 1.0594630944,
+        }
+    }
+
+    sound GuitarElectricFs3 {
+        category = EHE: Main,
+        loop = false,
+        is3D = true,
+        clip {
+            file = media/sound/EGuitarFSBS-bridge-clean-small-SFZ-20220911/ogg/G3_s4_01.ogg,
+            distanceMax = 650,
+            reverbFactor = 0.1,
+            volume = 0.7,
+            pitch = 0.9438743127,
+        }
+    }
+
+    sound GuitarElectricG3 {
+        category = EHE: Main,
+        loop = false,
+        is3D = true,
+        clip {
+            file = media/sound/EGuitarFSBS-bridge-clean-small-SFZ-20220911/ogg/G3_s4_01.ogg,
+            distanceMax = 650,
+            reverbFactor = 0.1,
+            volume = 0.7,
+        }
+    }
+
+    sound GuitarElectricGs3 {
+        category = EHE: Main,
+        loop = false,
+        is3D = true,
+        clip {
+            file = media/sound/EGuitarFSBS-bridge-clean-small-SFZ-20220911/ogg/G3_s4_01.ogg,
+            distanceMax = 650,
+            reverbFactor = 0.1,
+            volume = 0.7,
+            pitch = 1.0594630944,
+        }
+    }
+
+    sound GuitarElectricA3 {
+        category = EHE: Main,
+        loop = false,
+        is3D = true,
+        clip {
+            file = media/sound/EGuitarFSBS-bridge-clean-small-SFZ-20220911/ogg/G3_s4_01.ogg,
+            distanceMax = 650,
+            reverbFactor = 0.1,
+            volume = 0.7,
+            pitch = 1.1224620483,
+        }
+    }
+
+    sound GuitarElectricAs3 {
+        category = EHE: Main,
+        loop = false,
+        is3D = true,
+        clip {
+            file = media/sound/EGuitarFSBS-bridge-clean-small-SFZ-20220911/ogg/B3_s5_01.ogg,
+            distanceMax = 650,
+            reverbFactor = 0.1,
+            volume = 0.7,
+            pitch = 0.9438743127,
+        }
+    }
+
+    sound GuitarElectricB3 {
+        category = EHE: Main,
+        loop = false,
+        is3D = true,
+        clip {
+            file = media/sound/EGuitarFSBS-bridge-clean-small-SFZ-20220911/ogg/B3_s5_01.ogg,
+            distanceMax = 650,
+            reverbFactor = 0.1,
+            volume = 0.7,
+        }
+    }
+
+    sound GuitarElectricC4 {
+        category = EHE: Main,
+        loop = false,
+        is3D = true,
+        clip {
+            file = media/sound/EGuitarFSBS-bridge-clean-small-SFZ-20220911/ogg/B3_s5_01.ogg,
+            distanceMax = 650,
+            reverbFactor = 0.1,
+            volume = 0.7,
+            pitch = 1.0594630944,
+        }
+    }
+
+    sound GuitarElectricCs4 {
+        category = EHE: Main,
+        loop = false,
+        is3D = true,
+        clip {
+            file = media/sound/EGuitarFSBS-bridge-clean-small-SFZ-20220911/ogg/B3_s5_01.ogg,
+            distanceMax = 650,
+            reverbFactor = 0.1,
+            volume = 0.7,
+            pitch = 1.1224620483,
+        }
+    }
+
+    sound GuitarElectricD4 {
+        category = EHE: Main,
+        loop = false,
+        is3D = true,
+        clip {
+            file = media/sound/EGuitarFSBS-bridge-clean-small-SFZ-20220911/ogg/E4_s6_01.ogg,
+            distanceMax = 650,
+            reverbFactor = 0.1,
+            volume = 0.7,
+            pitch = 0.8908987181,
+        }
+    }
+
+    sound GuitarElectricDs4 {
+        category = EHE: Main,
+        loop = false,
+        is3D = true,
+        clip {
+            file = media/sound/EGuitarFSBS-bridge-clean-small-SFZ-20220911/ogg/E4_s6_01.ogg,
+            distanceMax = 650,
+            reverbFactor = 0.1,
+            volume = 0.7,
+            pitch = 0.9438743127,
+        }
+    }
+
+    sound GuitarElectricE4 {
+        category = EHE: Main,
+        loop = false,
+        is3D = true,
+        clip {
+            file = media/sound/EGuitarFSBS-bridge-clean-small-SFZ-20220911/ogg/E4_s6_01.ogg,
+            distanceMax = 650,
+            reverbFactor = 0.1,
+            volume = 0.7,
+        }
+    }
+
+    sound GuitarElectricF4 {
+        category = EHE: Main,
+        loop = false,
+        is3D = true,
+        clip {
+            file = media/sound/EGuitarFSBS-bridge-clean-small-SFZ-20220911/ogg/E4_s6_01.ogg,
+            distanceMax = 650,
+            reverbFactor = 0.1,
+            volume = 0.7,
+            pitch = 1.0594630944,
+        }
+    }
+
+    sound GuitarElectricFs4 {
+        category = EHE: Main,
+        loop = false,
+        is3D = true,
+        clip {
+            file = media/sound/EGuitarFSBS-bridge-clean-small-SFZ-20220911/ogg/G4_s6_01.ogg,
+            distanceMax = 650,
+            reverbFactor = 0.1,
+            volume = 0.7,
+            pitch = 0.9438743127,
+        }
+    }
+
+    sound GuitarElectricG4 {
+        category = EHE: Main,
+        loop = false,
+        is3D = true,
+        clip {
+            file = media/sound/EGuitarFSBS-bridge-clean-small-SFZ-20220911/ogg/G4_s6_01.ogg,
+            distanceMax = 650,
+            reverbFactor = 0.1,
+            volume = 0.7,
+        }
+    }
+
+    sound GuitarElectricGs4 {
+        category = EHE: Main,
+        loop = false,
+        is3D = true,
+        clip {
+            file = media/sound/EGuitarFSBS-bridge-clean-small-SFZ-20220911/ogg/G4_s6_01.ogg,
+            distanceMax = 650,
+            reverbFactor = 0.1,
+            volume = 0.7,
+            pitch = 1.0594630944,
+        }
+    }
+
+    sound GuitarElectricA4 {
+        category = EHE: Main,
+        loop = false,
+        is3D = true,
+        clip {
+            file = media/sound/EGuitarFSBS-bridge-clean-small-SFZ-20220911/ogg/G4_s6_01.ogg,
+            distanceMax = 650,
+            reverbFactor = 0.1,
+            volume = 0.7,
+            pitch = 1.1224620483,
+        }
+    }
+
+    sound GuitarElectricAs4 {
+        category = EHE: Main,
+        loop = false,
+        is3D = true,
+        clip {
+            file = media/sound/EGuitarFSBS-bridge-clean-small-SFZ-20220911/ogg/B4_s6_01.ogg,
+            distanceMax = 650,
+            reverbFactor = 0.1,
+            volume = 0.7,
+            pitch = 0.9438743127,
+        }
+    }
+
+    sound GuitarElectricB4 {
+        category = EHE: Main,
+        loop = false,
+        is3D = true,
+        clip {
+            file = media/sound/EGuitarFSBS-bridge-clean-small-SFZ-20220911/ogg/B4_s6_01.ogg,
+            distanceMax = 650,
+            reverbFactor = 0.1,
+            volume = 0.7,
+        }
+    }
+
+    sound GuitarElectricC5 {
+        category = EHE: Main,
+        loop = false,
+        is3D = true,
+        clip {
+            file = media/sound/EGuitarFSBS-bridge-clean-small-SFZ-20220911/ogg/B4_s6_01.ogg,
+            distanceMax = 650,
+            reverbFactor = 0.1,
+            volume = 0.7,
+            pitch = 1.0594630944,
+        }
+    }
+}

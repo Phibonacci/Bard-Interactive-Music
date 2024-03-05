@@ -1,0 +1,5 @@
+SurvivalGuide_EN {
+    SurvivalGuide_BardInteractiveMusic =    " <H1> BARD INTERACTIVE MUSIC <BR> " ..
+                                            " <TEXT> <SIZE:small>" ..
+                                            " When playing with electrical instruments you can click the thunder icon on the window title bar to enable or disable the distorsion.",
+}
