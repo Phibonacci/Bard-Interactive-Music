@@ -1,8 +1,9 @@
 ContextMenu_EN = {
-    ContextMenu_PlayAcousticGuitar = "Play Acoustic Guitar",
-    ContextMenu_PlayBanjo = "Play Banjo",
-    ContextMenu_PlayElectricGuitar = "Play Electric Guitar",
-    ContextMenu_PlayBassGuitar = "Play Bass",
-    ContextMenu_PlaySynthesizer = "Play Synthesizer",
-    ContextMenu_PlayFlute = "Play Flute",
+    ContextMenu_Bard_PlayAcousticGuitar = "Play Acoustic Guitar",
+    ContextMenu_Bard_PlayBanjo = "Play Banjo",
+    ContextMenu_Bard_PlayElectricGuitar = "Play Electric Guitar",
+    ContextMenu_Bard_PlayBassGuitar = "Play Bass",
+    ContextMenu_Bard_PlaySynthesizer = "Play Synthesizer",
+    ContextMenu_Bard_PlayFlute = "Play Flute",
+    ContextMenu_Bard_PlaySaxophone = "Play Saxophone",
 }

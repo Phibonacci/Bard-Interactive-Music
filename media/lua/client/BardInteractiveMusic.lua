@@ -11,19 +11,21 @@ local ValidItems = {
     ['Base.GuitarElectricBassRed'] = true,
     ['Base.Keytar'] = true,
     ['Base.Flute'] = true,
+    ['Base.Saxophone'] = true,
 }
 
 local ItemToActionName = {
-    ['Base.GuitarAcoustic'] = 'ContextMenu_PlayAcousticGuitar',
-    ['Base.Banjo'] = 'ContextMenu_PlayBanjo',
-    ['Base.GuitarElectricBlack'] = 'ContextMenu_PlayElectricGuitar',
-    ['Base.GuitarElectricBlue'] = 'ContextMenu_PlayElectricGuitar',
-    ['Base.GuitarElectricRed'] = 'ContextMenu_PlayElectricGuitar',
-    ['Base.GuitarElectricBassBlack'] = 'ContextMenu_PlayBassGuitar',
-    ['Base.GuitarElectricBassBlue'] = 'ContextMenu_PlayBassGuitar',
-    ['Base.GuitarElectricBassRed'] = 'ContextMenu_PlayBassGuitar',
-    ['Base.Keytar'] = 'ContextMenu_PlaySynthesizer',
-    ['Base.Flute'] = 'ContextMenu_PlayFlute',
+    ['Base.GuitarAcoustic'] = 'ContextMenu_Bard_PlayAcousticGuitar',
+    ['Base.Banjo'] = 'ContextMenu_Bard_PlayBanjo',
+    ['Base.GuitarElectricBlack'] = 'ContextMenu_Bard_PlayElectricGuitar',
+    ['Base.GuitarElectricBlue'] = 'ContextMenu_Bard_PlayElectricGuitar',
+    ['Base.GuitarElectricRed'] = 'ContextMenu_Bard_PlayElectricGuitar',
+    ['Base.GuitarElectricBassBlack'] = 'ContextMenu_Bard_PlayBassGuitar',
+    ['Base.GuitarElectricBassBlue'] = 'ContextMenu_Bard_PlayBassGuitar',
+    ['Base.GuitarElectricBassRed'] = 'ContextMenu_Bard_PlayBassGuitar',
+    ['Base.Keytar'] = 'ContextMenu_Bard_PlaySynthesizer',
+    ['Base.Flute'] = 'ContextMenu_Bard_PlayFlute',
+    ['Base.Saxophone'] = 'ContextMenu_Bard_PlaySaxophone',
 }
 
 local ContextMenu = {}
