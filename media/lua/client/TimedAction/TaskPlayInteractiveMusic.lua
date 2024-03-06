@@ -16,6 +16,7 @@ local ItemToInstrumentName = {
     ['Base.GuitarElectricBassBlue'] = 'GuitarBass',
     ['Base.GuitarElectricBassRed'] = 'GuitarBass',
     ['Base.Keytar'] = 'Synthesizer',
+    ['Base.Flute'] = 'Flute',
 }
 
 function PlayInteractiveMusic:new(character, item)
@@ -151,6 +152,7 @@ function PlayInteractiveMusic:start()
     self.character:setPrimaryHandItem(nil)
     self.character:setSecondaryHandItem(self.item)
 
+    -- todo loop on table
     if type == 'Base.GuitarAcoustic' then
         self:setActionAnim('BardPlayGuitarAcoustic')
     elseif type == 'Base.Banjo' then
@@ -161,6 +163,7 @@ function PlayInteractiveMusic:start()
         self:setActionAnim('BardPlayGuitarBass')
     elseif type == 'Base.Keytar' then
         --self:setActionAnim('BardPlaySynthesizer')
+    elseif type == 'Base.Flute' then
     end
 end
 

@@ -93,11 +93,12 @@ function GetCurrentTimeInMs()
 end
 
 local minimalNoteDurationByInstrument = {
-    ["GuitarAcoustic"] = { baseTime = 500, fadingTime = 200 },
-    ["Banjo"] = { baseTime = 300, fadingTime = 150 },
-    ["GuitarElectric"] = { baseTime = 250, fadingTime = 150 },
-    ["GuitarBass"] = { baseTime = 350, fadingTime = 150 },
-    ["Synthesizer"] = { baseTime = 250, fadingTime = 150 },
+    ["GuitarAcoustic"] = { baseTime = 500, fadingTime = 200, polyphonic = true },
+    ["Banjo"] = { baseTime = 300, fadingTime = 150, polyphonic = true },
+    ["GuitarElectric"] = { baseTime = 250, fadingTime = 150, polyphonic = true },
+    ["GuitarBass"] = { baseTime = 350, fadingTime = 150, polyphonic = true },
+    ["Synthesizer"] = { baseTime = 250, fadingTime = 150, polyphonic = true },
+    ["Flute"] = { baseTime = 0, fadingTime = 0, polyphonic = false },
 }
 
 function MusicPlayer:update()

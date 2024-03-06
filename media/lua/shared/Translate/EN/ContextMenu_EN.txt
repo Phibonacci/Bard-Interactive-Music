@@ -4,4 +4,5 @@ ContextMenu_EN = {
     ContextMenu_PlayElectricGuitar = "Play Electric Guitar",
     ContextMenu_PlayBassGuitar = "Play Bass",
     ContextMenu_PlaySynthesizer = "Play Synthesizer",
+    ContextMenu_PlayFlute = "Play Flute",
 }

@@ -26,4 +26,6 @@ The code and the assets are under MIT unless a licence file is saying otherwise.
 
 [Bass Guitar FS-Y (Clean)](https://freepats.zenvoid.org/ElectricGuitar/clean-electric-bass.html) by Gary Campion and processed by freepats.zenvoid.org (GNU GPL v3)
 
-[Kawai-K11-Banjo](https://freewavesamples.com/instrument/banjo) by Jason Champion ([permission given without a clear licence](https://github.com/Phibonacci/Bard-Interactive-Music/blob/main/media/sound/Kawai-K11-Banjo/README.txt))
+[Kawai-K11-Banjo](https://freewavesamples.com/instrument/banjo) by Jason Champion ([permission given without a clear licence](media/sound/Kawai-K11-Banjo/README.txt))
+
+[Flute](https://philharmonia.co.uk/resources/sound-samples/) from The Philharmonia of London ([permission given without a clear licence](media/sound/Philharmonia/README.md))

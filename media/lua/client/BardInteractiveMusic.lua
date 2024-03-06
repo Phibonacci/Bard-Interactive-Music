@@ -10,6 +10,7 @@ local ValidItems = {
     ['Base.GuitarElectricBassBlue'] = true,
     ['Base.GuitarElectricBassRed'] = true,
     ['Base.Keytar'] = true,
+    ['Base.Flute'] = true,
 }
 
 local ItemToActionName = {
@@ -22,6 +23,7 @@ local ItemToActionName = {
     ['Base.GuitarElectricBassBlue'] = 'ContextMenu_PlayBassGuitar',
     ['Base.GuitarElectricBassRed'] = 'ContextMenu_PlayBassGuitar',
     ['Base.Keytar'] = 'ContextMenu_PlaySynthesizer',
+    ['Base.Flute'] = 'ContextMenu_PlayFlute',
 }
 
 local ContextMenu = {}
