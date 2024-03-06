@@ -95,8 +95,9 @@ end
 local minimalNoteDurationByInstrument = {
     ["GuitarAcoustic"] = { baseTime = 500, fadingTime = 200 },
     ["Banjo"] = { baseTime = 300, fadingTime = 150 },
-    ["GuitarElectric"] = { baseTime = 250, fadingTime = 100 },
-    ["GuitarBass"] = { baseTime = 350, fadingTime = 150 }
+    ["GuitarElectric"] = { baseTime = 250, fadingTime = 150 },
+    ["GuitarBass"] = { baseTime = 350, fadingTime = 150 },
+    ["Synthesizer"] = { baseTime = 250, fadingTime = 150 },
 }
 
 function MusicPlayer:update()

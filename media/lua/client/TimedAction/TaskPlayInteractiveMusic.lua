@@ -14,7 +14,8 @@ local ItemToInstrumentName = {
     ['Base.GuitarElectricRed'] = 'GuitarElectric',
     ['Base.GuitarElectricBassBlack'] = 'GuitarBass',
     ['Base.GuitarElectricBassBlue'] = 'GuitarBass',
-    ['Base.GuitarElectricBassRed'] = 'GuitarBass'
+    ['Base.GuitarElectricBassRed'] = 'GuitarBass',
+    ['Base.Keytar'] = 'Synthesizer',
 }
 
 function PlayInteractiveMusic:new(character, item)
@@ -155,9 +156,11 @@ function PlayInteractiveMusic:start()
     elseif type == 'Base.Banjo' then
         self:setActionAnim('BardPlayGuitarAcoustic') -- meh, it works with Acoustic
     elseif type == 'Base.GuitarElectricBlack' or type == 'Base.GuitarElectricBlue' or type == 'Base.GuitarElectricRed' then
-        self:setActionAnim('BardPlayGuitarElectric');
+        self:setActionAnim('BardPlayGuitarElectric')
     elseif type == 'Base.GuitarElectricBassBlack' or type == 'Base.GuitarElectricBassBlue' or type == 'Base.GuitarElectricBassRed' then
-        self:setActionAnim('BardPlayGuitarBass');
+        self:setActionAnim('BardPlayGuitarBass')
+    elseif type == 'Base.Keytar' then
+        --self:setActionAnim('BardPlaySynthesizer')
     end
 end
 
