@@ -1,0 +1,481 @@
+module BardInteractiveMusic {
+    sound TrumpetC2 {
+        category = EHE: Main,
+        loop = false,
+        is3D = true,
+        clip {
+            file = media/sound/Philharmonia/Trumpet/ogg/trumpet_A3_very-long_piano_normal.ogg,
+            distanceMax = 650,
+            reverbFactor = 0.1,
+            volume = 0.7,
+            pitch = 0.2973017788,
+        }
+    }
+
+    sound TrumpetCs2 {
+        category = EHE: Main,
+        loop = false,
+        is3D = true,
+        clip {
+            file = media/sound/Philharmonia/Trumpet/ogg/trumpet_A3_very-long_piano_normal.ogg,
+            distanceMax = 650,
+            reverbFactor = 0.1,
+            volume = 0.7,
+            pitch = 0.3149802625,
+        }
+    }
+
+    sound TrumpetD2 {
+        category = EHE: Main,
+        loop = false,
+        is3D = true,
+        clip {
+            file = media/sound/Philharmonia/Trumpet/ogg/trumpet_A3_very-long_piano_normal.ogg,
+            distanceMax = 650,
+            reverbFactor = 0.1,
+            volume = 0.7,
+            pitch = 0.3337099635,
+        }
+    }
+
+    sound TrumpetDs2 {
+        category = EHE: Main,
+        loop = false,
+        is3D = true,
+        clip {
+            file = media/sound/Philharmonia/Trumpet/ogg/trumpet_A3_very-long_piano_normal.ogg,
+            distanceMax = 650,
+            reverbFactor = 0.1,
+            volume = 0.7,
+            pitch = 0.3535533906,
+        }
+    }
+
+    sound TrumpetE2 {
+        category = EHE: Main,
+        loop = false,
+        is3D = true,
+        clip {
+            file = media/sound/Philharmonia/Trumpet/ogg/trumpet_A3_very-long_piano_normal.ogg,
+            distanceMax = 650,
+            reverbFactor = 0.1,
+            volume = 0.7,
+            pitch = 0.3745767692,
+        }
+    }
+
+    sound TrumpetF2 {
+        category = EHE: Main,
+        loop = false,
+        is3D = true,
+        clip {
+            file = media/sound/Philharmonia/Trumpet/ogg/trumpet_A3_very-long_piano_normal.ogg,
+            distanceMax = 650,
+            reverbFactor = 0.1,
+            volume = 0.7,
+            pitch = 0.3968502630,
+        }
+    }
+
+    sound TrumpetFs2 {
+        category = EHE: Main,
+        loop = false,
+        is3D = true,
+        clip {
+            file = media/sound/Philharmonia/Trumpet/ogg/trumpet_A3_very-long_piano_normal.ogg,
+            distanceMax = 650,
+            reverbFactor = 0.1,
+            volume = 0.7,
+            pitch = 0.4204482076,
+        }
+    }
+
+    sound TrumpetG2 {
+        category = EHE: Main,
+        loop = false,
+        is3D = true,
+        clip {
+            file = media/sound/Philharmonia/Trumpet/ogg/trumpet_A3_very-long_piano_normal.ogg,
+            distanceMax = 650,
+            reverbFactor = 0.1,
+            volume = 0.7,
+            pitch = 0.4454493591,
+        }
+    }
+
+    sound TrumpetGs2 {
+        category = EHE: Main,
+        loop = false,
+        is3D = true,
+        clip {
+            file = media/sound/Philharmonia/Trumpet/ogg/trumpet_A3_very-long_piano_normal.ogg,
+            distanceMax = 650,
+            reverbFactor = 0.1,
+            volume = 0.7,
+            pitch = 0.4719371563,
+        }
+    }
+
+    sound TrumpetA2 {
+        category = EHE: Main,
+        loop = false,
+        is3D = true,
+        clip {
+            file = media/sound/Philharmonia/Trumpet/ogg/trumpet_A3_very-long_piano_normal.ogg,
+            distanceMax = 650,
+            reverbFactor = 0.1,
+            volume = 0.7,
+            pitch = 0.5,
+        }
+    }
+
+    sound TrumpetAs2 {
+        category = EHE: Main,
+        loop = false,
+        is3D = true,
+        clip {
+            file = media/sound/Philharmonia/Trumpet/ogg/trumpet_A3_very-long_piano_normal.ogg,
+            distanceMax = 650,
+            reverbFactor = 0.1,
+            volume = 0.7,
+            pitch = 0.5297315472,
+        }
+    }
+
+    sound TrumpetB2 {
+        category = EHE: Main,
+        loop = false,
+        is3D = true,
+        clip {
+            file = media/sound/Philharmonia/Trumpet/ogg/trumpet_A3_very-long_piano_normal.ogg,
+            distanceMax = 650,
+            reverbFactor = 0.1,
+            volume = 0.7,
+            pitch = 0.5612310242,
+        }
+    }
+
+    sound TrumpetC3 {
+        category = EHE: Main,
+        loop = false,
+        is3D = true,
+        clip {
+            file = media/sound/Philharmonia/Trumpet/ogg/trumpet_A3_very-long_piano_normal.ogg,
+            distanceMax = 650,
+            reverbFactor = 0.1,
+            volume = 0.7,
+            pitch = 0.5946035575,
+        }
+    }
+
+    sound TrumpetCs3 {
+        category = EHE: Main,
+        loop = false,
+        is3D = true,
+        clip {
+            file = media/sound/Philharmonia/Trumpet/ogg/trumpet_A3_very-long_piano_normal.ogg,
+            distanceMax = 650,
+            reverbFactor = 0.1,
+            volume = 0.7,
+            pitch = 0.6299605249,
+        }
+    }
+
+    sound TrumpetD3 {
+        category = EHE: Main,
+        loop = false,
+        is3D = true,
+        clip {
+            file = media/sound/Philharmonia/Trumpet/ogg/trumpet_A3_very-long_piano_normal.ogg,
+            distanceMax = 650,
+            reverbFactor = 0.1,
+            volume = 0.7,
+            pitch = 0.6674199271,
+        }
+    }
+
+    sound TrumpetDs3 {
+        category = EHE: Main,
+        loop = false,
+        is3D = true,
+        clip {
+            file = media/sound/Philharmonia/Trumpet/ogg/trumpet_A3_very-long_piano_normal.ogg,
+            distanceMax = 650,
+            reverbFactor = 0.1,
+            volume = 0.7,
+            pitch = 0.7071067812,
+        }
+    }
+
+    sound TrumpetE3 {
+        category = EHE: Main,
+        loop = false,
+        is3D = true,
+        clip {
+            file = media/sound/Philharmonia/Trumpet/ogg/trumpet_A3_very-long_piano_normal.ogg,
+            distanceMax = 650,
+            reverbFactor = 0.1,
+            volume = 0.7,
+            pitch = 0.7491535384,
+        }
+    }
+
+    sound TrumpetF3 {
+        category = EHE: Main,
+        loop = false,
+        is3D = true,
+        clip {
+            file = media/sound/Philharmonia/Trumpet/ogg/trumpet_A3_very-long_piano_normal.ogg,
+            distanceMax = 650,
+            reverbFactor = 0.1,
+            volume = 0.7,
+            pitch = 0.7937005260,
+        }
+    }
+
+    sound TrumpetFs3 {
+        category = EHE: Main,
+        loop = false,
+        is3D = true,
+        clip {
+            file = media/sound/Philharmonia/Trumpet/ogg/trumpet_A3_very-long_piano_normal.ogg,
+            distanceMax = 650,
+            reverbFactor = 0.1,
+            volume = 0.7,
+            pitch = 0.8408964153,
+        }
+    }
+
+    sound TrumpetG3 {
+        category = EHE: Main,
+        loop = false,
+        is3D = true,
+        clip {
+            file = media/sound/Philharmonia/Trumpet/ogg/trumpet_A3_very-long_piano_normal.ogg,
+            distanceMax = 650,
+            reverbFactor = 0.1,
+            volume = 0.7,
+            pitch = 0.8908987181,
+        }
+    }
+
+    sound TrumpetGs3 {
+        category = EHE: Main,
+        loop = false,
+        is3D = true,
+        clip {
+            file = media/sound/Philharmonia/Trumpet/ogg/trumpet_A3_very-long_piano_normal.ogg,
+            distanceMax = 650,
+            reverbFactor = 0.1,
+            volume = 0.7,
+            pitch = 0.9438743127,
+        }
+    }
+
+    sound TrumpetA3 {
+        category = EHE: Main,
+        loop = false,
+        is3D = true,
+        clip {
+            file = media/sound/Philharmonia/Trumpet/ogg/trumpet_A3_very-long_piano_normal.ogg,
+            distanceMax = 650,
+            reverbFactor = 0.1,
+            volume = 0.7,
+        }
+    }
+
+    sound TrumpetAs3 {
+        category = EHE: Main,
+        loop = false,
+        is3D = true,
+        clip {
+            file = media/sound/Philharmonia/Trumpet/ogg/trumpet_A3_very-long_piano_normal.ogg,
+            distanceMax = 650,
+            reverbFactor = 0.1,
+            volume = 0.7,
+            pitch = 1.0594630944,
+        }
+    }
+
+    sound TrumpetB3 {
+        category = EHE: Main,
+        loop = false,
+        is3D = true,
+        clip {
+            file = media/sound/Philharmonia/Trumpet/ogg/trumpet_A3_very-long_piano_normal.ogg,
+            distanceMax = 650,
+            reverbFactor = 0.1,
+            volume = 0.7,
+            pitch = 1.1224620483,
+        }
+    }
+
+    sound TrumpetC4 {
+        category = EHE: Main,
+        loop = false,
+        is3D = true,
+        clip {
+            file = media/sound/Philharmonia/Trumpet/ogg/trumpet_A3_very-long_piano_normal.ogg,
+            distanceMax = 650,
+            reverbFactor = 0.1,
+            volume = 0.7,
+            pitch = 1.1892071150,
+        }
+    }
+
+    sound TrumpetCs4 {
+        category = EHE: Main,
+        loop = false,
+        is3D = true,
+        clip {
+            file = media/sound/Philharmonia/Trumpet/ogg/trumpet_A3_very-long_piano_normal.ogg,
+            distanceMax = 650,
+            reverbFactor = 0.1,
+            volume = 0.7,
+            pitch = 1.2599210499,
+        }
+    }
+
+    sound TrumpetD4 {
+        category = EHE: Main,
+        loop = false,
+        is3D = true,
+        clip {
+            file = media/sound/Philharmonia/Trumpet/ogg/trumpet_A3_very-long_piano_normal.ogg,
+            distanceMax = 650,
+            reverbFactor = 0.1,
+            volume = 0.7,
+            pitch = 1.3348398542,
+        }
+    }
+
+    sound TrumpetDs4 {
+        category = EHE: Main,
+        loop = false,
+        is3D = true,
+        clip {
+            file = media/sound/Philharmonia/Trumpet/ogg/trumpet_A3_very-long_piano_normal.ogg,
+            distanceMax = 650,
+            reverbFactor = 0.1,
+            volume = 0.7,
+            pitch = 1.4142135624,
+        }
+    }
+
+    sound TrumpetE4 {
+        category = EHE: Main,
+        loop = false,
+        is3D = true,
+        clip {
+            file = media/sound/Philharmonia/Trumpet/ogg/trumpet_A3_very-long_piano_normal.ogg,
+            distanceMax = 650,
+            reverbFactor = 0.1,
+            volume = 0.7,
+            pitch = 1.4983070769,
+        }
+    }
+
+    sound TrumpetF4 {
+        category = EHE: Main,
+        loop = false,
+        is3D = true,
+        clip {
+            file = media/sound/Philharmonia/Trumpet/ogg/trumpet_A3_very-long_piano_normal.ogg,
+            distanceMax = 650,
+            reverbFactor = 0.1,
+            volume = 0.7,
+            pitch = 1.5874010520,
+        }
+    }
+
+    sound TrumpetFs4 {
+        category = EHE: Main,
+        loop = false,
+        is3D = true,
+        clip {
+            file = media/sound/Philharmonia/Trumpet/ogg/trumpet_A3_very-long_piano_normal.ogg,
+            distanceMax = 650,
+            reverbFactor = 0.1,
+            volume = 0.7,
+            pitch = 1.6817928305,
+        }
+    }
+
+    sound TrumpetG4 {
+        category = EHE: Main,
+        loop = false,
+        is3D = true,
+        clip {
+            file = media/sound/Philharmonia/Trumpet/ogg/trumpet_A3_very-long_piano_normal.ogg,
+            distanceMax = 650,
+            reverbFactor = 0.1,
+            volume = 0.7,
+            pitch = 1.7817974363,
+        }
+    }
+
+    sound TrumpetGs4 {
+        category = EHE: Main,
+        loop = false,
+        is3D = true,
+        clip {
+            file = media/sound/Philharmonia/Trumpet/ogg/trumpet_A3_very-long_piano_normal.ogg,
+            distanceMax = 650,
+            reverbFactor = 0.1,
+            volume = 0.7,
+            pitch = 1.8877486254,
+        }
+    }
+
+    sound TrumpetA4 {
+        category = EHE: Main,
+        loop = false,
+        is3D = true,
+        clip {
+            file = media/sound/Philharmonia/Trumpet/ogg/trumpet_A3_very-long_piano_normal.ogg,
+            distanceMax = 650,
+            reverbFactor = 0.1,
+            volume = 0.7,
+            pitch = 2,
+        }
+    }
+
+    sound TrumpetAs4 {
+        category = EHE: Main,
+        loop = false,
+        is3D = true,
+        clip {
+            file = media/sound/Philharmonia/Trumpet/ogg/trumpet_A3_very-long_piano_normal.ogg,
+            distanceMax = 650,
+            reverbFactor = 0.1,
+            volume = 0.7,
+            pitch = 2.1189261887,
+        }
+    }
+
+    sound TrumpetB4 {
+        category = EHE: Main,
+        loop = false,
+        is3D = true,
+        clip {
+            file = media/sound/Philharmonia/Trumpet/ogg/trumpet_A3_very-long_piano_normal.ogg,
+            distanceMax = 650,
+            reverbFactor = 0.1,
+            volume = 0.7,
+            pitch = 2.2449240966,
+        }
+    }
+
+    sound TrumpetC5 {
+        category = EHE: Main,
+        loop = false,
+        is3D = true,
+        clip {
+            file = media/sound/Philharmonia/Trumpet/ogg/trumpet_A3_very-long_piano_normal.ogg,
+            distanceMax = 650,
+            reverbFactor = 0.1,
+            volume = 0.7,
+            pitch = 2.3784142300,
+        }
+    }
+}

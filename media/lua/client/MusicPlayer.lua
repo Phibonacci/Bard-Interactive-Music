@@ -100,6 +100,7 @@ local minimalNoteDurationByInstrument = {
     ["Synthesizer"] = { baseTime = 250, fadingTime = 150, polyphonic = true },
     ["Flute"] = { baseTime = 0, fadingTime = 50, polyphonic = false },
     ["Saxophone"] = { baseTime = 0, fadingTime = 50, polyphonic = false },
+    ["Trumpet"] = { baseTime = 0, fadingTime = 50, polyphonic = false },
 }
 
 function MusicPlayer:update()

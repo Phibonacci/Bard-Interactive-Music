@@ -12,6 +12,7 @@ local ValidItems = {
     ['Base.Keytar'] = true,
     ['Base.Flute'] = true,
     ['Base.Saxophone'] = true,
+    ['Base.Trumpet'] = true,
 }
 
 local ItemToActionName = {
@@ -26,6 +27,7 @@ local ItemToActionName = {
     ['Base.Keytar'] = 'ContextMenu_Bard_PlaySynthesizer',
     ['Base.Flute'] = 'ContextMenu_Bard_PlayFlute',
     ['Base.Saxophone'] = 'ContextMenu_Bard_PlaySaxophone',
+    ['Base.Trumpet'] = 'ContextMenu_Bard_PlayTrumpet',
 }
 
 local ContextMenu = {}

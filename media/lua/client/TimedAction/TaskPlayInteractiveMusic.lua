@@ -18,6 +18,7 @@ local ItemToInstrumentName = {
     ['Base.Keytar'] = 'Synthesizer',
     ['Base.Flute'] = 'Flute',
     ['Base.Saxophone'] = 'Saxophone',
+    ['Base.Trumpet'] = 'Trumpet',
 }
 
 function PlayInteractiveMusic:new(character, item)
