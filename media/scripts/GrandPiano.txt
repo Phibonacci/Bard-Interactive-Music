@@ -1,48 +1,22 @@
 module BardInteractiveMusic {
-    sound PianoC2 {
+    sound GrandPianoC2 {
         category = EHE: Main,
         loop = false,
         is3D = true,
         clip {
-            file = media/sound/PianoFB-small-SFZ-20200401/ogg/D2.ogg,
-            distanceMax = 650,
-            reverbFactor = 0.1,
-            volume = 0.7,
-            pitch = 0.8908987181,
-        }
-    }
-
-    sound PianoCs2 {
-        category = EHE: Main,
-        loop = false,
-        is3D = true,
-        clip {
-            file = media/sound/PianoFB-small-SFZ-20200401/ogg/D2.ogg,
-            distanceMax = 650,
-            reverbFactor = 0.1,
-            volume = 0.7,
-            pitch = 0.9438743127,
-        }
-    }
-
-    sound PianoD2 {
-        category = EHE: Main,
-        loop = false,
-        is3D = true,
-        clip {
-            file = media/sound/PianoFB-small-SFZ-20200401/ogg/D2.ogg,
+            file = media/sound/SalamanderGrandPianoV3_44.1khz16bit/ogg/C2v2.ogg,
             distanceMax = 650,
             reverbFactor = 0.1,
             volume = 0.7,
         }
     }
 
-    sound PianoDs2 {
+    sound GrandPianoCs2 {
         category = EHE: Main,
         loop = false,
         is3D = true,
         clip {
-            file = media/sound/PianoFB-small-SFZ-20200401/ogg/D2.ogg,
+            file = media/sound/SalamanderGrandPianoV3_44.1khz16bit/ogg/C2v2.ogg,
             distanceMax = 650,
             reverbFactor = 0.1,
             volume = 0.7,
@@ -50,12 +24,12 @@ module BardInteractiveMusic {
         }
     }
 
-    sound PianoE2 {
+    sound GrandPianoD2 {
         category = EHE: Main,
         loop = false,
         is3D = true,
         clip {
-            file = media/sound/PianoFB-small-SFZ-20200401/ogg/F2.ogg,
+            file = media/sound/SalamanderGrandPianoV3_44.1khz16bit/ogg/D#2v2.ogg,
             distanceMax = 650,
             reverbFactor = 0.1,
             volume = 0.7,
@@ -63,24 +37,24 @@ module BardInteractiveMusic {
         }
     }
 
-    sound PianoF2 {
+    sound GrandPianoDs2 {
         category = EHE: Main,
         loop = false,
         is3D = true,
         clip {
-            file = media/sound/PianoFB-small-SFZ-20200401/ogg/F2.ogg,
+            file = media/sound/SalamanderGrandPianoV3_44.1khz16bit/ogg/D#2v2.ogg,
             distanceMax = 650,
             reverbFactor = 0.1,
             volume = 0.7,
         }
     }
 
-    sound PianoFs2 {
+    sound GrandPianoE2 {
         category = EHE: Main,
         loop = false,
         is3D = true,
         clip {
-            file = media/sound/PianoFB-small-SFZ-20200401/ogg/F2.ogg,
+            file = media/sound/SalamanderGrandPianoV3_44.1khz16bit/ogg/D#2v2.ogg,
             distanceMax = 650,
             reverbFactor = 0.1,
             volume = 0.7,
@@ -88,51 +62,12 @@ module BardInteractiveMusic {
         }
     }
 
-    sound PianoG2 {
+    sound GrandPianoF2 {
         category = EHE: Main,
         loop = false,
         is3D = true,
         clip {
-            file = media/sound/PianoFB-small-SFZ-20200401/ogg/F2.ogg,
-            distanceMax = 650,
-            reverbFactor = 0.1,
-            volume = 0.7,
-            pitch = 1.1224620483,
-        }
-    }
-
-    sound PianoGs2 {
-        category = EHE: Main,
-        loop = false,
-        is3D = true,
-        clip {
-            file = media/sound/PianoFB-small-SFZ-20200401/ogg/F2.ogg,
-            distanceMax = 650,
-            reverbFactor = 0.1,
-            volume = 0.7,
-            pitch = 1.1892071150,
-        }
-    }
-
-    sound PianoA2 {
-        category = EHE: Main,
-        loop = false,
-        is3D = true,
-        clip {
-            file = media/sound/PianoFB-small-SFZ-20200401/ogg/B2.ogg,
-            distanceMax = 650,
-            reverbFactor = 0.1,
-            volume = 0.7,
-            pitch = 0.8908987181,
-        }
-    }
-
-    sound PianoAs2 {
-        category = EHE: Main,
-        loop = false,
-        is3D = true,
-        clip {
-            file = media/sound/PianoFB-small-SFZ-20200401/ogg/B2.ogg,
+            file = media/sound/SalamanderGrandPianoV3_44.1khz16bit/ogg/F#2v2.ogg,
             distanceMax = 650,
             reverbFactor = 0.1,
             volume = 0.7,
@@ -140,24 +75,24 @@ module BardInteractiveMusic {
         }
     }
 
-    sound PianoB2 {
+    sound GrandPianoFs2 {
         category = EHE: Main,
         loop = false,
         is3D = true,
         clip {
-            file = media/sound/PianoFB-small-SFZ-20200401/ogg/B2.ogg,
+            file = media/sound/SalamanderGrandPianoV3_44.1khz16bit/ogg/F#2v2.ogg,
             distanceMax = 650,
             reverbFactor = 0.1,
             volume = 0.7,
         }
     }
 
-    sound PianoC3 {
+    sound GrandPianoG2 {
         category = EHE: Main,
         loop = false,
         is3D = true,
         clip {
-            file = media/sound/PianoFB-small-SFZ-20200401/ogg/B2.ogg,
+            file = media/sound/SalamanderGrandPianoV3_44.1khz16bit/ogg/F#2v2.ogg,
             distanceMax = 650,
             reverbFactor = 0.1,
             volume = 0.7,
@@ -165,64 +100,12 @@ module BardInteractiveMusic {
         }
     }
 
-    sound PianoCs3 {
+    sound GrandPianoGs2 {
         category = EHE: Main,
         loop = false,
         is3D = true,
         clip {
-            file = media/sound/PianoFB-small-SFZ-20200401/ogg/B2.ogg,
-            distanceMax = 650,
-            reverbFactor = 0.1,
-            volume = 0.7,
-            pitch = 1.1224620483,
-        }
-    }
-
-    sound PianoD3 {
-        category = EHE: Main,
-        loop = false,
-        is3D = true,
-        clip {
-            file = media/sound/PianoFB-small-SFZ-20200401/ogg/B2.ogg,
-            distanceMax = 650,
-            reverbFactor = 0.1,
-            volume = 0.7,
-            pitch = 1.1892071150,
-        }
-    }
-
-    sound PianoDs3 {
-        category = EHE: Main,
-        loop = false,
-        is3D = true,
-        clip {
-            file = media/sound/PianoFB-small-SFZ-20200401/ogg/F#3.ogg,
-            distanceMax = 650,
-            reverbFactor = 0.1,
-            volume = 0.7,
-            pitch = 0.8408964153,
-        }
-    }
-
-    sound PianoE3 {
-        category = EHE: Main,
-        loop = false,
-        is3D = true,
-        clip {
-            file = media/sound/PianoFB-small-SFZ-20200401/ogg/F#3.ogg,
-            distanceMax = 650,
-            reverbFactor = 0.1,
-            volume = 0.7,
-            pitch = 0.8908987181,
-        }
-    }
-
-    sound PianoF3 {
-        category = EHE: Main,
-        loop = false,
-        is3D = true,
-        clip {
-            file = media/sound/PianoFB-small-SFZ-20200401/ogg/F#3.ogg,
+            file = media/sound/SalamanderGrandPianoV3_44.1khz16bit/ogg/A2v2.ogg,
             distanceMax = 650,
             reverbFactor = 0.1,
             volume = 0.7,
@@ -230,24 +113,24 @@ module BardInteractiveMusic {
         }
     }
 
-    sound PianoFs3 {
+    sound GrandPianoA2 {
         category = EHE: Main,
         loop = false,
         is3D = true,
         clip {
-            file = media/sound/PianoFB-small-SFZ-20200401/ogg/F#3.ogg,
+            file = media/sound/SalamanderGrandPianoV3_44.1khz16bit/ogg/A2v2.ogg,
             distanceMax = 650,
             reverbFactor = 0.1,
             volume = 0.7,
         }
     }
 
-    sound PianoG3 {
+    sound GrandPianoAs2 {
         category = EHE: Main,
         loop = false,
         is3D = true,
         clip {
-            file = media/sound/PianoFB-small-SFZ-20200401/ogg/F#3.ogg,
+            file = media/sound/SalamanderGrandPianoV3_44.1khz16bit/ogg/A2v2.ogg,
             distanceMax = 650,
             reverbFactor = 0.1,
             volume = 0.7,
@@ -255,12 +138,12 @@ module BardInteractiveMusic {
         }
     }
 
-    sound PianoGs3 {
+    sound GrandPianoB2 {
         category = EHE: Main,
         loop = false,
         is3D = true,
         clip {
-            file = media/sound/PianoFB-small-SFZ-20200401/ogg/A3.ogg,
+            file = media/sound/SalamanderGrandPianoV3_44.1khz16bit/ogg/C3v2.ogg,
             distanceMax = 650,
             reverbFactor = 0.1,
             volume = 0.7,
@@ -268,24 +151,24 @@ module BardInteractiveMusic {
         }
     }
 
-    sound PianoA3 {
+    sound GrandPianoC3 {
         category = EHE: Main,
         loop = false,
         is3D = true,
         clip {
-            file = media/sound/PianoFB-small-SFZ-20200401/ogg/A3.ogg,
+            file = media/sound/SalamanderGrandPianoV3_44.1khz16bit/ogg/C3v2.ogg,
             distanceMax = 650,
             reverbFactor = 0.1,
             volume = 0.7,
         }
     }
 
-    sound PianoAs3 {
+    sound GrandPianoCs3 {
         category = EHE: Main,
         loop = false,
         is3D = true,
         clip {
-            file = media/sound/PianoFB-small-SFZ-20200401/ogg/A3.ogg,
+            file = media/sound/SalamanderGrandPianoV3_44.1khz16bit/ogg/C3v2.ogg,
             distanceMax = 650,
             reverbFactor = 0.1,
             volume = 0.7,
@@ -293,12 +176,12 @@ module BardInteractiveMusic {
         }
     }
 
-    sound PianoB3 {
+    sound GrandPianoD3 {
         category = EHE: Main,
         loop = false,
         is3D = true,
         clip {
-            file = media/sound/PianoFB-small-SFZ-20200401/ogg/C4.ogg,
+            file = media/sound/SalamanderGrandPianoV3_44.1khz16bit/ogg/D#3v2.ogg,
             distanceMax = 650,
             reverbFactor = 0.1,
             volume = 0.7,
@@ -306,24 +189,24 @@ module BardInteractiveMusic {
         }
     }
 
-    sound PianoC4 {
+    sound GrandPianoDs3 {
         category = EHE: Main,
         loop = false,
         is3D = true,
         clip {
-            file = media/sound/PianoFB-small-SFZ-20200401/ogg/C4.ogg,
+            file = media/sound/SalamanderGrandPianoV3_44.1khz16bit/ogg/D#3v2.ogg,
             distanceMax = 650,
             reverbFactor = 0.1,
             volume = 0.7,
         }
     }
 
-    sound PianoCs4 {
+    sound GrandPianoE3 {
         category = EHE: Main,
         loop = false,
         is3D = true,
         clip {
-            file = media/sound/PianoFB-small-SFZ-20200401/ogg/C4.ogg,
+            file = media/sound/SalamanderGrandPianoV3_44.1khz16bit/ogg/D#3v2.ogg,
             distanceMax = 650,
             reverbFactor = 0.1,
             volume = 0.7,
@@ -331,25 +214,12 @@ module BardInteractiveMusic {
         }
     }
 
-    sound PianoD4 {
+    sound GrandPianoF3 {
         category = EHE: Main,
         loop = false,
         is3D = true,
         clip {
-            file = media/sound/PianoFB-small-SFZ-20200401/ogg/C4.ogg,
-            distanceMax = 650,
-            reverbFactor = 0.1,
-            volume = 0.7,
-            pitch = 1.1224620483,
-        }
-    }
-
-    sound PianoDs4 {
-        category = EHE: Main,
-        loop = false,
-        is3D = true,
-        clip {
-            file = media/sound/PianoFB-small-SFZ-20200401/ogg/E4.ogg,
+            file = media/sound/SalamanderGrandPianoV3_44.1khz16bit/ogg/F#3v2.ogg,
             distanceMax = 650,
             reverbFactor = 0.1,
             volume = 0.7,
@@ -357,24 +227,24 @@ module BardInteractiveMusic {
         }
     }
 
-    sound PianoE4 {
+    sound GrandPianoFs3 {
         category = EHE: Main,
         loop = false,
         is3D = true,
         clip {
-            file = media/sound/PianoFB-small-SFZ-20200401/ogg/E4.ogg,
+            file = media/sound/SalamanderGrandPianoV3_44.1khz16bit/ogg/F#3v2.ogg,
             distanceMax = 650,
             reverbFactor = 0.1,
             volume = 0.7,
         }
     }
 
-    sound PianoF4 {
+    sound GrandPianoG3 {
         category = EHE: Main,
         loop = false,
         is3D = true,
         clip {
-            file = media/sound/PianoFB-small-SFZ-20200401/ogg/E4.ogg,
+            file = media/sound/SalamanderGrandPianoV3_44.1khz16bit/ogg/F#3v2.ogg,
             distanceMax = 650,
             reverbFactor = 0.1,
             volume = 0.7,
@@ -382,64 +252,12 @@ module BardInteractiveMusic {
         }
     }
 
-    sound PianoFs4 {
+    sound GrandPianoGs3 {
         category = EHE: Main,
         loop = false,
         is3D = true,
         clip {
-            file = media/sound/PianoFB-small-SFZ-20200401/ogg/E4.ogg,
-            distanceMax = 650,
-            reverbFactor = 0.1,
-            volume = 0.7,
-            pitch = 1.1224620483,
-        }
-    }
-
-    sound PianoG4 {
-        category = EHE: Main,
-        loop = false,
-        is3D = true,
-        clip {
-            file = media/sound/PianoFB-small-SFZ-20200401/ogg/E4.ogg,
-            distanceMax = 650,
-            reverbFactor = 0.1,
-            volume = 0.7,
-            pitch = 1.1892071150,
-        }
-    }
-
-    sound PianoGs4 {
-        category = EHE: Main,
-        loop = false,
-        is3D = true,
-        clip {
-            file = media/sound/PianoFB-small-SFZ-20200401/ogg/E4.ogg,
-            distanceMax = 650,
-            reverbFactor = 0.1,
-            volume = 0.7,
-            pitch = 1.2599210499,
-        }
-    }
-
-    sound PianoA4 {
-        category = EHE: Main,
-        loop = false,
-        is3D = true,
-        clip {
-            file = media/sound/PianoFB-small-SFZ-20200401/ogg/B4.ogg,
-            distanceMax = 650,
-            reverbFactor = 0.1,
-            volume = 0.7,
-            pitch = 0.8908987181,
-        }
-    }
-
-    sound PianoAs4 {
-        category = EHE: Main,
-        loop = false,
-        is3D = true,
-        clip {
-            file = media/sound/PianoFB-small-SFZ-20200401/ogg/B4.ogg,
+            file = media/sound/SalamanderGrandPianoV3_44.1khz16bit/ogg/A3v2.ogg,
             distanceMax = 650,
             reverbFactor = 0.1,
             volume = 0.7,
@@ -447,28 +265,205 @@ module BardInteractiveMusic {
         }
     }
 
-    sound PianoB4 {
+    sound GrandPianoA3 {
         category = EHE: Main,
         loop = false,
         is3D = true,
         clip {
-            file = media/sound/PianoFB-small-SFZ-20200401/ogg/B4.ogg,
+            file = media/sound/SalamanderGrandPianoV3_44.1khz16bit/ogg/A3v2.ogg,
             distanceMax = 650,
             reverbFactor = 0.1,
             volume = 0.7,
         }
     }
 
-    sound PianoC5 {
+    sound GrandPianoAs3 {
         category = EHE: Main,
         loop = false,
         is3D = true,
         clip {
-            file = media/sound/PianoFB-small-SFZ-20200401/ogg/B4.ogg,
+            file = media/sound/SalamanderGrandPianoV3_44.1khz16bit/ogg/A3v2.ogg,
             distanceMax = 650,
             reverbFactor = 0.1,
             volume = 0.7,
             pitch = 1.0594630944,
+        }
+    }
+
+    sound GrandPianoB3 {
+        category = EHE: Main,
+        loop = false,
+        is3D = true,
+        clip {
+            file = media/sound/SalamanderGrandPianoV3_44.1khz16bit/ogg/C4v2.ogg,
+            distanceMax = 650,
+            reverbFactor = 0.1,
+            volume = 0.7,
+            pitch = 0.9438743127,
+        }
+    }
+
+    sound GrandPianoC4 {
+        category = EHE: Main,
+        loop = false,
+        is3D = true,
+        clip {
+            file = media/sound/SalamanderGrandPianoV3_44.1khz16bit/ogg/C4v2.ogg,
+            distanceMax = 650,
+            reverbFactor = 0.1,
+            volume = 0.7,
+        }
+    }
+
+    sound GrandPianoCs4 {
+        category = EHE: Main,
+        loop = false,
+        is3D = true,
+        clip {
+            file = media/sound/SalamanderGrandPianoV3_44.1khz16bit/ogg/C4v2.ogg,
+            distanceMax = 650,
+            reverbFactor = 0.1,
+            volume = 0.7,
+            pitch = 1.0594630944,
+        }
+    }
+
+    sound GrandPianoD4 {
+        category = EHE: Main,
+        loop = false,
+        is3D = true,
+        clip {
+            file = media/sound/SalamanderGrandPianoV3_44.1khz16bit/ogg/D#4v2.ogg,
+            distanceMax = 650,
+            reverbFactor = 0.1,
+            volume = 0.7,
+            pitch = 0.9438743127,
+        }
+    }
+
+    sound GrandPianoDs4 {
+        category = EHE: Main,
+        loop = false,
+        is3D = true,
+        clip {
+            file = media/sound/SalamanderGrandPianoV3_44.1khz16bit/ogg/D#4v2.ogg,
+            distanceMax = 650,
+            reverbFactor = 0.1,
+            volume = 0.7,
+        }
+    }
+
+    sound GrandPianoE4 {
+        category = EHE: Main,
+        loop = false,
+        is3D = true,
+        clip {
+            file = media/sound/SalamanderGrandPianoV3_44.1khz16bit/ogg/D#4v2.ogg,
+            distanceMax = 650,
+            reverbFactor = 0.1,
+            volume = 0.7,
+            pitch = 1.0594630944,
+        }
+    }
+
+    sound GrandPianoF4 {
+        category = EHE: Main,
+        loop = false,
+        is3D = true,
+        clip {
+            file = media/sound/SalamanderGrandPianoV3_44.1khz16bit/ogg/F#4v2.ogg,
+            distanceMax = 650,
+            reverbFactor = 0.1,
+            volume = 0.7,
+            pitch = 0.9438743127,
+        }
+    }
+
+    sound GrandPianoFs4 {
+        category = EHE: Main,
+        loop = false,
+        is3D = true,
+        clip {
+            file = media/sound/SalamanderGrandPianoV3_44.1khz16bit/ogg/F#4v2.ogg,
+            distanceMax = 650,
+            reverbFactor = 0.1,
+            volume = 0.7,
+        }
+    }
+
+    sound GrandPianoG4 {
+        category = EHE: Main,
+        loop = false,
+        is3D = true,
+        clip {
+            file = media/sound/SalamanderGrandPianoV3_44.1khz16bit/ogg/F#4v2.ogg,
+            distanceMax = 650,
+            reverbFactor = 0.1,
+            volume = 0.7,
+            pitch = 1.0594630944,
+        }
+    }
+
+    sound GrandPianoGs4 {
+        category = EHE: Main,
+        loop = false,
+        is3D = true,
+        clip {
+            file = media/sound/SalamanderGrandPianoV3_44.1khz16bit/ogg/A4v2.ogg,
+            distanceMax = 650,
+            reverbFactor = 0.1,
+            volume = 0.7,
+            pitch = 0.9438743127,
+        }
+    }
+
+    sound GrandPianoA4 {
+        category = EHE: Main,
+        loop = false,
+        is3D = true,
+        clip {
+            file = media/sound/SalamanderGrandPianoV3_44.1khz16bit/ogg/A4v2.ogg,
+            distanceMax = 650,
+            reverbFactor = 0.1,
+            volume = 0.7,
+        }
+    }
+
+    sound GrandPianoAs4 {
+        category = EHE: Main,
+        loop = false,
+        is3D = true,
+        clip {
+            file = media/sound/SalamanderGrandPianoV3_44.1khz16bit/ogg/A4v2.ogg,
+            distanceMax = 650,
+            reverbFactor = 0.1,
+            volume = 0.7,
+            pitch = 1.0594630944,
+        }
+    }
+
+    sound GrandPianoB4 {
+        category = EHE: Main,
+        loop = false,
+        is3D = true,
+        clip {
+            file = media/sound/SalamanderGrandPianoV3_44.1khz16bit/ogg/C5v2.ogg,
+            distanceMax = 650,
+            reverbFactor = 0.1,
+            volume = 0.7,
+            pitch = 0.9438743127,
+        }
+    }
+
+    sound GrandPianoC5 {
+        category = EHE: Main,
+        loop = false,
+        is3D = true,
+        clip {
+            file = media/sound/SalamanderGrandPianoV3_44.1khz16bit/ogg/C5v2.ogg,
+            distanceMax = 650,
+            reverbFactor = 0.1,
+            volume = 0.7,
         }
     }
 }

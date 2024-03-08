@@ -28,6 +28,10 @@ The code and the assets are under MIT unless a licence file is saying otherwise.
 
 [Tenor Saxophone](https://freepats.zenvoid.org/Reed/saxophone.html) from the Versilian Community Sample Library (CC0 1.0)
 
+[Old Piano FB](https://freepats.zenvoid.org/Piano/honky-tonk-piano.html) by Piotr Barcz (CC0 1.0)
+
+[Salamander Grand Piano](https://freepats.zenvoid.org/Piano/acoustic-grand-piano.html) by Alexander Holm (CC Attribution 3.0)
+
 [Kawai-K11-Banjo](https://freewavesamples.com/instrument/banjo) by Jason Champion ([permission given without a clear licence](media/sound/Kawai-K11-Banjo/README.txt))
 
 [Flute, Trumpet and Violin](https://philharmonia.co.uk/resources/sound-samples/) from The Philharmonia of London ([permission given without a clear licence](media/sound/Philharmonia/README.md))
