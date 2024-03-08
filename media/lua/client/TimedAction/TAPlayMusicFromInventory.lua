@@ -59,7 +59,7 @@ local ItemToAnimation = {
     ['Base.Flute'] = 'BardPlayFlute',
     -- ['Base.Saxophone'] = 'BardPlaySaxophone',
     -- ['Base.Trumpet'] = 'BardPlayTrumpet',
-    -- ['Base.Violin'] = 'BardPlayViolin',
+    ['Base.Violin'] = 'BardPlayViolin',
 }
 
 function TAPlayMusicFromInventory:startAnimation()
