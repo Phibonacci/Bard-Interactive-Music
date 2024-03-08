@@ -58,7 +58,7 @@ local ItemToAnimation = {
     ['Base.Keytar'] = 'BardPlaySynthesizer',
     ['Base.Flute'] = 'BardPlayFlute',
     -- ['Base.Saxophone'] = 'BardPlaySaxophone',
-    -- ['Base.Trumpet'] = 'BardPlayTrumpet',
+    ['Base.Trumpet'] = 'BardPlayTrumpet',
     ['Base.Violin'] = 'BardPlayViolin',
 }
 
