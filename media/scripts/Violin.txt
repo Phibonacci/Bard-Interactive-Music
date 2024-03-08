@@ -1,0 +1,482 @@
+module BardInteractiveMusic {
+    sound ViolinC2 {
+        category = EHE: Main,
+        loop = false,
+        is3D = true,
+        clip {
+            file = media/sound/Philharmonia/Violin/ogg/violin_Cs4_very-long_piano_arco-normal.ogg,
+            distanceMax = 650,
+            reverbFactor = 0.1,
+            volume = 0.7,
+            pitch = 0.2359685782,
+        }
+    }
+
+    sound ViolinCs2 {
+        category = EHE: Main,
+        loop = false,
+        is3D = true,
+        clip {
+            file = media/sound/Philharmonia/Violin/ogg/violin_Cs4_very-long_piano_arco-normal.ogg,
+            distanceMax = 650,
+            reverbFactor = 0.1,
+            volume = 0.7,
+            pitch = 0.25,
+        }
+    }
+
+    sound ViolinD2 {
+        category = EHE: Main,
+        loop = false,
+        is3D = true,
+        clip {
+            file = media/sound/Philharmonia/Violin/ogg/violin_Cs4_very-long_piano_arco-normal.ogg,
+            distanceMax = 650,
+            reverbFactor = 0.1,
+            volume = 0.7,
+            pitch = 0.2648657736,
+        }
+    }
+
+    sound ViolinDs2 {
+        category = EHE: Main,
+        loop = false,
+        is3D = true,
+        clip {
+            file = media/sound/Philharmonia/Violin/ogg/violin_Cs4_very-long_piano_arco-normal.ogg,
+            distanceMax = 650,
+            reverbFactor = 0.1,
+            volume = 0.7,
+            pitch = 0.2806155121,
+        }
+    }
+
+    sound ViolinE2 {
+        category = EHE: Main,
+        loop = false,
+        is3D = true,
+        clip {
+            file = media/sound/Philharmonia/Violin/ogg/violin_Cs4_very-long_piano_arco-normal.ogg,
+            distanceMax = 650,
+            reverbFactor = 0.1,
+            volume = 0.7,
+            pitch = 0.2973017788,
+        }
+    }
+
+    sound ViolinF2 {
+        category = EHE: Main,
+        loop = false,
+        is3D = true,
+        clip {
+            file = media/sound/Philharmonia/Violin/ogg/violin_Cs4_very-long_piano_arco-normal.ogg,
+            distanceMax = 650,
+            reverbFactor = 0.1,
+            volume = 0.7,
+            pitch = 0.3149802625,
+        }
+    }
+
+    sound ViolinFs2 {
+        category = EHE: Main,
+        loop = false,
+        is3D = true,
+        clip {
+            file = media/sound/Philharmonia/Violin/ogg/violin_Cs4_very-long_piano_arco-normal.ogg,
+            distanceMax = 650,
+            reverbFactor = 0.1,
+            volume = 0.7,
+            pitch = 0.3337099635,
+        }
+    }
+
+    sound ViolinG2 {
+        category = EHE: Main,
+        loop = false,
+        is3D = true,
+        clip {
+            file = media/sound/Philharmonia/Violin/ogg/violin_Cs4_very-long_piano_arco-normal.ogg,
+            distanceMax = 650,
+            reverbFactor = 0.1,
+            volume = 0.7,
+            pitch = 0.3535533906,
+        }
+    }
+
+    sound ViolinGs2 {
+        category = EHE: Main,
+        loop = false,
+        is3D = true,
+        clip {
+            file = media/sound/Philharmonia/Violin/ogg/violin_Cs4_very-long_piano_arco-normal.ogg,
+            distanceMax = 650,
+            reverbFactor = 0.1,
+            volume = 0.7,
+            pitch = 0.3745767692,
+        }
+    }
+
+    sound ViolinA2 {
+        category = EHE: Main,
+        loop = false,
+        is3D = true,
+        clip {
+            file = media/sound/Philharmonia/Violin/ogg/violin_Cs4_very-long_piano_arco-normal.ogg,
+            distanceMax = 650,
+            reverbFactor = 0.1,
+            volume = 0.7,
+            pitch = 0.3968502630,
+        }
+    }
+
+    sound ViolinAs2 {
+        category = EHE: Main,
+        loop = false,
+        is3D = true,
+        clip {
+            file = media/sound/Philharmonia/Violin/ogg/violin_Cs4_very-long_piano_arco-normal.ogg,
+            distanceMax = 650,
+            reverbFactor = 0.1,
+            volume = 0.7,
+            pitch = 0.4204482076,
+        }
+    }
+
+    sound ViolinB2 {
+        category = EHE: Main,
+        loop = false,
+        is3D = true,
+        clip {
+            file = media/sound/Philharmonia/Violin/ogg/violin_Cs4_very-long_piano_arco-normal.ogg,
+            distanceMax = 650,
+            reverbFactor = 0.1,
+            volume = 0.7,
+            pitch = 0.4454493591,
+        }
+    }
+
+    sound ViolinC3 {
+        category = EHE: Main,
+        loop = false,
+        is3D = true,
+        clip {
+            file = media/sound/Philharmonia/Violin/ogg/violin_Cs4_very-long_piano_arco-normal.ogg,
+            distanceMax = 650,
+            reverbFactor = 0.1,
+            volume = 0.7,
+            pitch = 0.4719371563,
+        }
+    }
+
+    sound ViolinCs3 {
+        category = EHE: Main,
+        loop = false,
+        is3D = true,
+        clip {
+            file = media/sound/Philharmonia/Violin/ogg/violin_Cs4_very-long_piano_arco-normal.ogg,
+            distanceMax = 650,
+            reverbFactor = 0.1,
+            volume = 0.7,
+            pitch = 0.5,
+        }
+    }
+
+    sound ViolinD3 {
+        category = EHE: Main,
+        loop = false,
+        is3D = true,
+        clip {
+            file = media/sound/Philharmonia/Violin/ogg/violin_Cs4_very-long_piano_arco-normal.ogg,
+            distanceMax = 650,
+            reverbFactor = 0.1,
+            volume = 0.7,
+            pitch = 0.5297315472,
+        }
+    }
+
+    sound ViolinDs3 {
+        category = EHE: Main,
+        loop = false,
+        is3D = true,
+        clip {
+            file = media/sound/Philharmonia/Violin/ogg/violin_Cs4_very-long_piano_arco-normal.ogg,
+            distanceMax = 650,
+            reverbFactor = 0.1,
+            volume = 0.7,
+            pitch = 0.5612310242,
+        }
+    }
+
+    sound ViolinE3 {
+        category = EHE: Main,
+        loop = false,
+        is3D = true,
+        clip {
+            file = media/sound/Philharmonia/Violin/ogg/violin_Cs4_very-long_piano_arco-normal.ogg,
+            distanceMax = 650,
+            reverbFactor = 0.1,
+            volume = 0.7,
+            pitch = 0.5946035575,
+        }
+    }
+
+    sound ViolinF3 {
+        category = EHE: Main,
+        loop = false,
+        is3D = true,
+        clip {
+            file = media/sound/Philharmonia/Violin/ogg/violin_Cs4_very-long_piano_arco-normal.ogg,
+            distanceMax = 650,
+            reverbFactor = 0.1,
+            volume = 0.7,
+            pitch = 0.6299605249,
+        }
+    }
+
+    sound ViolinFs3 {
+        category = EHE: Main,
+        loop = false,
+        is3D = true,
+        clip {
+            file = media/sound/Philharmonia/Violin/ogg/violin_Cs4_very-long_piano_arco-normal.ogg,
+            distanceMax = 650,
+            reverbFactor = 0.1,
+            volume = 0.7,
+            pitch = 0.6674199271,
+        }
+    }
+
+    sound ViolinG3 {
+        category = EHE: Main,
+        loop = false,
+        is3D = true,
+        clip {
+            file = media/sound/Philharmonia/Violin/ogg/violin_Cs4_very-long_piano_arco-normal.ogg,
+            distanceMax = 650,
+            reverbFactor = 0.1,
+            volume = 0.7,
+            pitch = 0.7071067812,
+        }
+    }
+
+    sound ViolinGs3 {
+        category = EHE: Main,
+        loop = false,
+        is3D = true,
+        clip {
+            file = media/sound/Philharmonia/Violin/ogg/violin_Cs4_very-long_piano_arco-normal.ogg,
+            distanceMax = 650,
+            reverbFactor = 0.1,
+            volume = 0.7,
+            pitch = 0.7491535384,
+        }
+    }
+
+    sound ViolinA3 {
+        category = EHE: Main,
+        loop = false,
+        is3D = true,
+        clip {
+            file = media/sound/Philharmonia/Violin/ogg/violin_Cs4_very-long_piano_arco-normal.ogg,
+            distanceMax = 650,
+            reverbFactor = 0.1,
+            volume = 0.7,
+            pitch = 0.7937005260,
+        }
+    }
+
+    sound ViolinAs3 {
+        category = EHE: Main,
+        loop = false,
+        is3D = true,
+        clip {
+            file = media/sound/Philharmonia/Violin/ogg/violin_Cs4_very-long_piano_arco-normal.ogg,
+            distanceMax = 650,
+            reverbFactor = 0.1,
+            volume = 0.7,
+            pitch = 0.8408964153,
+        }
+    }
+
+    sound ViolinB3 {
+        category = EHE: Main,
+        loop = false,
+        is3D = true,
+        clip {
+            file = media/sound/Philharmonia/Violin/ogg/violin_Cs4_very-long_piano_arco-normal.ogg,
+            distanceMax = 650,
+            reverbFactor = 0.1,
+            volume = 0.7,
+            pitch = 0.8908987181,
+        }
+    }
+
+    sound ViolinC4 {
+        category = EHE: Main,
+        loop = false,
+        is3D = true,
+        clip {
+            file = media/sound/Philharmonia/Violin/ogg/violin_Cs4_very-long_piano_arco-normal.ogg,
+            distanceMax = 650,
+            reverbFactor = 0.1,
+            volume = 0.7,
+            pitch = 0.9438743127,
+        }
+    }
+
+    sound ViolinCs4 {
+        category = EHE: Main,
+        loop = false,
+        is3D = true,
+        clip {
+            file = media/sound/Philharmonia/Violin/ogg/violin_Cs4_very-long_piano_arco-normal.ogg,
+            distanceMax = 650,
+            reverbFactor = 0.1,
+            volume = 0.7,
+        }
+    }
+
+    sound ViolinD4 {
+        category = EHE: Main,
+        loop = false,
+        is3D = true,
+        clip {
+            file = media/sound/Philharmonia/Violin/ogg/violin_Cs4_very-long_piano_arco-normal.ogg,
+            distanceMax = 650,
+            reverbFactor = 0.1,
+            volume = 0.7,
+            pitch = 1.0594630944,
+        }
+    }
+
+    sound ViolinDs4 {
+        category = EHE: Main,
+        loop = false,
+        is3D = true,
+        clip {
+            file = media/sound/Philharmonia/Violin/ogg/violin_Cs4_very-long_piano_arco-normal.ogg,
+            distanceMax = 650,
+            reverbFactor = 0.1,
+            volume = 0.7,
+            pitch = 1.1224620483,
+        }
+    }
+
+    sound ViolinE4 {
+        category = EHE: Main,
+        loop = false,
+        is3D = true,
+        clip {
+            file = media/sound/Philharmonia/Violin/ogg/violin_Cs4_very-long_piano_arco-normal.ogg,
+            distanceMax = 650,
+            reverbFactor = 0.1,
+            volume = 0.7,
+            pitch = 1.1892071150,
+        }
+    }
+
+    sound ViolinF4 {
+        category = EHE: Main,
+        loop = false,
+        is3D = true,
+        clip {
+            file = media/sound/Philharmonia/Violin/ogg/violin_Cs4_very-long_piano_arco-normal.ogg,
+            distanceMax = 650,
+            reverbFactor = 0.1,
+            volume = 0.7,
+            pitch = 1.2599210499,
+        }
+    }
+
+    sound ViolinFs4 {
+        category = EHE: Main,
+        loop = false,
+        is3D = true,
+        clip {
+            file = media/sound/Philharmonia/Violin/ogg/violin_Cs4_very-long_piano_arco-normal.ogg,
+            distanceMax = 650,
+            reverbFactor = 0.1,
+            volume = 0.7,
+            pitch = 1.3348398542,
+        }
+    }
+
+    sound ViolinG4 {
+        category = EHE: Main,
+        loop = false,
+        is3D = true,
+        clip {
+            file = media/sound/Philharmonia/Violin/ogg/violin_Cs4_very-long_piano_arco-normal.ogg,
+            distanceMax = 650,
+            reverbFactor = 0.1,
+            volume = 0.7,
+            pitch = 1.4142135624,
+        }
+    }
+
+    sound ViolinGs4 {
+        category = EHE: Main,
+        loop = false,
+        is3D = true,
+        clip {
+            file = media/sound/Philharmonia/Violin/ogg/violin_Cs4_very-long_piano_arco-normal.ogg,
+            distanceMax = 650,
+            reverbFactor = 0.1,
+            volume = 0.7,
+            pitch = 1.4983070769,
+        }
+    }
+
+    sound ViolinA4 {
+        category = EHE: Main,
+        loop = false,
+        is3D = true,
+        clip {
+            file = media/sound/Philharmonia/Violin/ogg/violin_Cs4_very-long_piano_arco-normal.ogg,
+            distanceMax = 650,
+            reverbFactor = 0.1,
+            volume = 0.7,
+            pitch = 2,
+            pitch = 1.5874010520,
+        }
+    }
+
+    sound ViolinAs4 {
+        category = EHE: Main,
+        loop = false,
+        is3D = true,
+        clip {
+            file = media/sound/Philharmonia/Violin/ogg/violin_Cs4_very-long_piano_arco-normal.ogg,
+            distanceMax = 650,
+            reverbFactor = 0.1,
+            volume = 0.7,
+            pitch = 1.6817928305,
+        }
+    }
+
+    sound ViolinB4 {
+        category = EHE: Main,
+        loop = false,
+        is3D = true,
+        clip {
+            file = media/sound/Philharmonia/Violin/ogg/violin_Cs4_very-long_piano_arco-normal.ogg,
+            distanceMax = 650,
+            reverbFactor = 0.1,
+            volume = 0.7,
+            pitch = 1.7817974363,
+        }
+    }
+
+    sound ViolinC5 {
+        category = EHE: Main,
+        loop = false,
+        is3D = true,
+        clip {
+            file = media/sound/Philharmonia/Violin/ogg/violin_Cs4_very-long_piano_arco-normal.ogg,
+            distanceMax = 650,
+            reverbFactor = 0.1,
+            volume = 0.7,
+            pitch = 1.8877486254,
+        }
+    }
+}

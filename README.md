@@ -30,4 +30,4 @@ The code and the assets are under MIT unless a licence file is saying otherwise.
 
 [Kawai-K11-Banjo](https://freewavesamples.com/instrument/banjo) by Jason Champion ([permission given without a clear licence](media/sound/Kawai-K11-Banjo/README.txt))
 
-[Flute and Trumpet](https://philharmonia.co.uk/resources/sound-samples/) from The Philharmonia of London ([permission given without a clear licence](media/sound/Philharmonia/README.md))
+[Flute, Trumpet and Violin](https://philharmonia.co.uk/resources/sound-samples/) from The Philharmonia of London ([permission given without a clear licence](media/sound/Philharmonia/README.md))

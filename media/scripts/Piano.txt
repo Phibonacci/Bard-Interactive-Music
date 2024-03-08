@@ -1,0 +1,313 @@
+module BardInteractiveMusic {
+    sound PianoA3vH {
+        category = EHE: Main,
+        loop = false,
+        is3D = true,
+        clip {
+            file = media/sound/UprightPianoKW-small-SFZ-20190703/samples/A3vH.wav,
+            distanceMax = 650,
+            reverbFactor = 0.1,
+            volume = 0.7,
+            }
+    }
+
+    sound PianoA4vH {
+        category = EHE: Main,
+        loop = false,
+        is3D = true,
+        clip {
+            file = media/sound/UprightPianoKW-small-SFZ-20190703/samples/A4vH.wav,
+            distanceMax = 650,
+            reverbFactor = 0.1,
+            volume = 0.7,
+            }
+    }
+
+    sound PianoA5vH {
+        category = EHE: Main,
+        loop = false,
+        is3D = true,
+        clip {
+            file = media/sound/UprightPianoKW-small-SFZ-20190703/samples/A5vH.wav,
+            distanceMax = 650,
+            reverbFactor = 0.1,
+            volume = 0.7,
+            }
+    }
+
+    sound PianoA6vH {
+        category = EHE: Main,
+        loop = false,
+        is3D = true,
+        clip {
+            file = media/sound/UprightPianoKW-small-SFZ-20190703/samples/A6vH.wav,
+            distanceMax = 650,
+            reverbFactor = 0.1,
+            volume = 0.7,
+            }
+    }
+
+    sound PianoA7vH {
+        category = EHE: Main,
+        loop = false,
+        is3D = true,
+        clip {
+            file = media/sound/UprightPianoKW-small-SFZ-20190703/samples/A7vH.wav,
+            distanceMax = 650,
+            reverbFactor = 0.1,
+            volume = 0.7,
+            }
+    }
+
+    sound PianoB1vH {
+        category = EHE: Main,
+        loop = false,
+        is3D = true,
+        clip {
+            file = media/sound/UprightPianoKW-small-SFZ-20190703/samples/B1vH.wav,
+            distanceMax = 650,
+            reverbFactor = 0.1,
+            volume = 0.7,
+            }
+    }
+
+    sound PianoB2vH {
+        category = EHE: Main,
+        loop = false,
+        is3D = true,
+        clip {
+            file = media/sound/UprightPianoKW-small-SFZ-20190703/samples/B2vH.wav,
+            distanceMax = 650,
+            reverbFactor = 0.1,
+            volume = 0.7,
+            }
+    }
+
+    sound PianoB7vH {
+        category = EHE: Main,
+        loop = false,
+        is3D = true,
+        clip {
+            file = media/sound/UprightPianoKW-small-SFZ-20190703/samples/B7vH.wav,
+            distanceMax = 650,
+            reverbFactor = 0.1,
+            volume = 0.7,
+            }
+    }
+
+    sound PianoC1vH {
+        category = EHE: Main,
+        loop = false,
+        is3D = true,
+        clip {
+            file = media/sound/UprightPianoKW-small-SFZ-20190703/samples/C1vH.wav,
+            distanceMax = 650,
+            reverbFactor = 0.1,
+            volume = 0.7,
+            }
+    }
+
+    sound PianoC4vH {
+        category = EHE: Main,
+        loop = false,
+        is3D = true,
+        clip {
+            file = media/sound/UprightPianoKW-small-SFZ-20190703/samples/C4vH.wav,
+            distanceMax = 650,
+            reverbFactor = 0.1,
+            volume = 0.7,
+            }
+    }
+
+    sound PianoC5vH {
+        category = EHE: Main,
+        loop = false,
+        is3D = true,
+        clip {
+            file = media/sound/UprightPianoKW-small-SFZ-20190703/samples/C5vH.wav,
+            distanceMax = 650,
+            reverbFactor = 0.1,
+            volume = 0.7,
+            }
+    }
+
+    sound PianoC6vH {
+        category = EHE: Main,
+        loop = false,
+        is3D = true,
+        clip {
+            file = media/sound/UprightPianoKW-small-SFZ-20190703/samples/C6vH.wav,
+            distanceMax = 650,
+            reverbFactor = 0.1,
+            volume = 0.7,
+            }
+    }
+
+    sound PianoC7vH {
+        category = EHE: Main,
+        loop = false,
+        is3D = true,
+        clip {
+            file = media/sound/UprightPianoKW-small-SFZ-20190703/samples/C7vH.wav,
+            distanceMax = 650,
+            reverbFactor = 0.1,
+            volume = 0.7,
+            }
+    }
+
+    sound PianoDs2vH {
+        category = EHE: Main,
+        loop = false,
+        is3D = true,
+        clip {
+            file = media/sound/UprightPianoKW-small-SFZ-20190703/samples/D#2vH.wav,
+            distanceMax = 650,
+            reverbFactor = 0.1,
+            volume = 0.7,
+            }
+    }
+
+    sound PianoDs3vH {
+        category = EHE: Main,
+        loop = false,
+        is3D = true,
+        clip {
+            file = media/sound/UprightPianoKW-small-SFZ-20190703/samples/D#3vH.wav,
+            distanceMax = 650,
+            reverbFactor = 0.1,
+            volume = 0.7,
+            }
+    }
+
+    sound PianoDs4vH {
+        category = EHE: Main,
+        loop = false,
+        is3D = true,
+        clip {
+            file = media/sound/UprightPianoKW-small-SFZ-20190703/samples/D#4vH.wav,
+            distanceMax = 650,
+            reverbFactor = 0.1,
+            volume = 0.7,
+            }
+    }
+
+    sound PianoDs5vH {
+        category = EHE: Main,
+        loop = false,
+        is3D = true,
+        clip {
+            file = media/sound/UprightPianoKW-small-SFZ-20190703/samples/D#5vH.wav,
+            distanceMax = 650,
+            reverbFactor = 0.1,
+            volume = 0.7,
+            }
+    }
+
+    sound PianoDs6vH {
+        category = EHE: Main,
+        loop = false,
+        is3D = true,
+        clip {
+            file = media/sound/UprightPianoKW-small-SFZ-20190703/samples/D#6vH.wav,
+            distanceMax = 650,
+            reverbFactor = 0.1,
+            volume = 0.7,
+            }
+    }
+
+    sound PianoDs7vH {
+        category = EHE: Main,
+        loop = false,
+        is3D = true,
+        clip {
+            file = media/sound/UprightPianoKW-small-SFZ-20190703/samples/D#7vH.wav,
+            distanceMax = 650,
+            reverbFactor = 0.1,
+            volume = 0.7,
+            }
+    }
+
+    sound PianoFs1vH {
+        category = EHE: Main,
+        loop = false,
+        is3D = true,
+        clip {
+            file = media/sound/UprightPianoKW-small-SFZ-20190703/samples/F#1vH.wav,
+            distanceMax = 650,
+            reverbFactor = 0.1,
+            volume = 0.7,
+            }
+    }
+
+    sound PianoFs2vH {
+        category = EHE: Main,
+        loop = false,
+        is3D = true,
+        clip {
+            file = media/sound/UprightPianoKW-small-SFZ-20190703/samples/F#2vH.wav,
+            distanceMax = 650,
+            reverbFactor = 0.1,
+            volume = 0.7,
+            }
+    }
+
+    sound PianoFs3vH {
+        category = EHE: Main,
+        loop = false,
+        is3D = true,
+        clip {
+            file = media/sound/UprightPianoKW-small-SFZ-20190703/samples/F#3vH.wav,
+            distanceMax = 650,
+            reverbFactor = 0.1,
+            volume = 0.7,
+            }
+    }
+
+    sound PianoFs4vH {
+        category = EHE: Main,
+        loop = false,
+        is3D = true,
+        clip {
+            file = media/sound/UprightPianoKW-small-SFZ-20190703/samples/F#4vH.wav,
+            distanceMax = 650,
+            reverbFactor = 0.1,
+            volume = 0.7,
+            }
+    }
+
+    sound PianoFs5vH {
+        category = EHE: Main,
+        loop = false,
+        is3D = true,
+        clip {
+            file = media/sound/UprightPianoKW-small-SFZ-20190703/samples/F#5vH.wav,
+            distanceMax = 650,
+            reverbFactor = 0.1,
+            volume = 0.7,
+            }
+    }
+
+    sound PianoFs6vH {
+        category = EHE: Main,
+        loop = false,
+        is3D = true,
+        clip {
+            file = media/sound/UprightPianoKW-small-SFZ-20190703/samples/F#6vH.wav,
+            distanceMax = 650,
+            reverbFactor = 0.1,
+            volume = 0.7,
+            }
+    }
+
+    sound PianoFs7vH {
+        category = EHE: Main,
+        loop = false,
+        is3D = true,
+        clip {
+            file = media/sound/UprightPianoKW-small-SFZ-20190703/samples/F#7vH.wav,
+            distanceMax = 650,
+            reverbFactor = 0.1,
+            volume = 0.7,
+            }
+    }
+}

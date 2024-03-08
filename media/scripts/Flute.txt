@@ -1,0 +1,479 @@
+module BardInteractiveMusic {
+    sound FluteC2 {
+        category = EHE: Main,
+        loop = false,
+        is3D = true,
+        clip {
+            file = media/sound/Philharmonia/Flute/ogg/flute_E4_very-long_pianissimo_normal.ogg,
+            distanceMax = 650,
+            reverbFactor = 0.1,
+            volume = 0.7,
+            pitch = 0.7937005260,
+        }
+    }
+
+    sound FluteCs2 {
+        category = EHE: Main,
+        loop = false,
+        is3D = true,
+        clip {
+            file = media/sound/Philharmonia/Flute/ogg/flute_E4_very-long_pianissimo_normal.ogg,
+            distanceMax = 650,
+            reverbFactor = 0.1,
+            volume = 0.7,
+            pitch = 0.8408964153,
+        }
+    }
+
+    sound FluteD2 {
+        category = EHE: Main,
+        loop = false,
+        is3D = true,
+        clip {
+            file = media/sound/Philharmonia/Flute/ogg/flute_E4_very-long_pianissimo_normal.ogg,
+            distanceMax = 650,
+            reverbFactor = 0.1,
+            volume = 0.7,
+            pitch = 0.8908987181,
+        }
+    }
+
+    sound FluteDs2 {
+        category = EHE: Main,
+        loop = false,
+        is3D = true,
+        clip {
+            file = media/sound/Philharmonia/Flute/ogg/flute_E4_very-long_pianissimo_normal.ogg,
+            distanceMax = 650,
+            reverbFactor = 0.1,
+            volume = 0.7,
+            pitch = 0.9438743127,
+        }
+    }
+
+    sound FluteE2 {
+        category = EHE: Main,
+        loop = false,
+        is3D = true,
+        clip {
+            file = media/sound/Philharmonia/Flute/ogg/flute_E4_very-long_pianissimo_normal.ogg,
+            distanceMax = 650,
+            reverbFactor = 0.1,
+            volume = 0.7,
+        }
+    }
+
+    sound FluteF2 {
+        category = EHE: Main,
+        loop = false,
+        is3D = true,
+        clip {
+            file = media/sound/Philharmonia/Flute/ogg/flute_E4_very-long_pianissimo_normal.ogg,
+            distanceMax = 650,
+            reverbFactor = 0.1,
+            volume = 0.7,
+            pitch = 1.0594630944,
+        }
+    }
+
+    sound FluteFs2 {
+        category = EHE: Main,
+        loop = false,
+        is3D = true,
+        clip {
+            file = media/sound/Philharmonia/Flute/ogg/flute_E4_very-long_pianissimo_normal.ogg,
+            distanceMax = 650,
+            reverbFactor = 0.1,
+            volume = 0.7,
+            pitch = 1.1224620483,
+        }
+    }
+
+    sound FluteG2 {
+        category = EHE: Main,
+        loop = false,
+        is3D = true,
+        clip {
+            file = media/sound/Philharmonia/Flute/ogg/flute_E4_very-long_pianissimo_normal.ogg,
+            distanceMax = 650,
+            reverbFactor = 0.1,
+            volume = 0.7,
+            pitch = 1.1892071150,
+        }
+    }
+
+    sound FluteGs2 {
+        category = EHE: Main,
+        loop = false,
+        is3D = true,
+        clip {
+            file = media/sound/Philharmonia/Flute/ogg/flute_E4_very-long_pianissimo_normal.ogg,
+            distanceMax = 650,
+            reverbFactor = 0.1,
+            volume = 0.7,
+            pitch = 1.2599210499,
+        }
+    }
+
+    sound FluteA2 {
+        category = EHE: Main,
+        loop = false,
+        is3D = true,
+        clip {
+            file = media/sound/Philharmonia/Flute/ogg/flute_E4_very-long_pianissimo_normal.ogg,
+            distanceMax = 650,
+            reverbFactor = 0.1,
+            volume = 0.7,
+            pitch = 1.3348398542,
+        }
+    }
+
+    sound FluteAs2 {
+        category = EHE: Main,
+        loop = false,
+        is3D = true,
+        clip {
+            file = media/sound/Philharmonia/Flute/ogg/flute_E4_very-long_pianissimo_normal.ogg,
+            distanceMax = 650,
+            reverbFactor = 0.1,
+            volume = 0.7,
+            pitch = 1.4142135624,
+        }
+    }
+
+    sound FluteB2 {
+        category = EHE: Main,
+        loop = false,
+        is3D = true,
+        clip {
+            file = media/sound/Philharmonia/Flute/ogg/flute_E4_very-long_pianissimo_normal.ogg,
+            distanceMax = 650,
+            reverbFactor = 0.1,
+            volume = 0.7,
+            pitch = 1.4983070769,
+        }
+    }
+
+    sound FluteC3 {
+        category = EHE: Main,
+        loop = false,
+        is3D = true,
+        clip {
+            file = media/sound/Philharmonia/Flute/ogg/flute_Fs5_very-long_pianissimo_normal.ogg,
+            distanceMax = 650,
+            reverbFactor = 0.1,
+            volume = 0.7,
+            pitch = 0.7071067812,
+        }
+    }
+
+    sound FluteCs3 {
+        category = EHE: Main,
+        loop = false,
+        is3D = true,
+        clip {
+            file = media/sound/Philharmonia/Flute/ogg/flute_Fs5_very-long_pianissimo_normal.ogg,
+            distanceMax = 650,
+            reverbFactor = 0.1,
+            volume = 0.7,
+            pitch = 0.7491535384,
+        }
+    }
+
+    sound FluteD3 {
+        category = EHE: Main,
+        loop = false,
+        is3D = true,
+        clip {
+            file = media/sound/Philharmonia/Flute/ogg/flute_Fs5_very-long_pianissimo_normal.ogg,
+            distanceMax = 650,
+            reverbFactor = 0.1,
+            volume = 0.7,
+            pitch = 0.7937005260,
+        }
+    }
+
+    sound FluteDs3 {
+        category = EHE: Main,
+        loop = false,
+        is3D = true,
+        clip {
+            file = media/sound/Philharmonia/Flute/ogg/flute_Fs5_very-long_pianissimo_normal.ogg,
+            distanceMax = 650,
+            reverbFactor = 0.1,
+            volume = 0.7,
+            pitch = 0.8408964153,
+        }
+    }
+
+    sound FluteE3 {
+        category = EHE: Main,
+        loop = false,
+        is3D = true,
+        clip {
+            file = media/sound/Philharmonia/Flute/ogg/flute_Fs5_very-long_pianissimo_normal.ogg,
+            distanceMax = 650,
+            reverbFactor = 0.1,
+            volume = 0.7,
+            pitch = 0.8908987181,
+        }
+    }
+
+    sound FluteF3 {
+        category = EHE: Main,
+        loop = false,
+        is3D = true,
+        clip {
+            file = media/sound/Philharmonia/Flute/ogg/flute_Fs5_very-long_pianissimo_normal.ogg,
+            distanceMax = 650,
+            reverbFactor = 0.1,
+            volume = 0.7,
+            pitch = 0.9438743127,
+        }
+    }
+
+    sound FluteFs3 {
+        category = EHE: Main,
+        loop = false,
+        is3D = true,
+        clip {
+            file = media/sound/Philharmonia/Flute/ogg/flute_Fs5_very-long_pianissimo_normal.ogg,
+            distanceMax = 650,
+            reverbFactor = 0.1,
+            volume = 0.7,
+        }
+    }
+
+    sound FluteG3 {
+        category = EHE: Main,
+        loop = false,
+        is3D = true,
+        clip {
+            file = media/sound/Philharmonia/Flute/ogg/flute_Fs5_very-long_pianissimo_normal.ogg,
+            distanceMax = 650,
+            reverbFactor = 0.1,
+            volume = 0.7,
+            pitch = 1.0594630944,
+        }
+    }
+
+    sound FluteGs3 {
+        category = EHE: Main,
+        loop = false,
+        is3D = true,
+        clip {
+            file = media/sound/Philharmonia/Flute/ogg/flute_Fs5_very-long_pianissimo_normal.ogg,
+            distanceMax = 650,
+            reverbFactor = 0.1,
+            volume = 0.7,
+            pitch = 1.1224620483,
+        }
+    }
+
+    sound FluteA3 {
+        category = EHE: Main,
+        loop = false,
+        is3D = true,
+        clip {
+            file = media/sound/Philharmonia/Flute/ogg/flute_Fs5_very-long_pianissimo_normal.ogg,
+            distanceMax = 650,
+            reverbFactor = 0.1,
+            volume = 0.7,
+            pitch = 1.1892071150,
+        }
+    }
+
+    sound FluteAs3 {
+        category = EHE: Main,
+        loop = false,
+        is3D = true,
+        clip {
+            file = media/sound/Philharmonia/Flute/ogg/flute_Fs5_very-long_pianissimo_normal.ogg,
+            distanceMax = 650,
+            reverbFactor = 0.1,
+            volume = 0.7,
+            pitch = 1.2599210499,
+        }
+    }
+
+    sound FluteB3 {
+        category = EHE: Main,
+        loop = false,
+        is3D = true,
+        clip {
+            file = media/sound/Philharmonia/Flute/ogg/flute_Fs5_very-long_pianissimo_normal.ogg,
+            distanceMax = 650,
+            reverbFactor = 0.1,
+            volume = 0.7,
+            pitch = 1.3348398542,
+        }
+    }
+
+    sound FluteC4 {
+        category = EHE: Main,
+        loop = false,
+        is3D = true,
+        clip {
+            file = media/sound/Philharmonia/Flute/ogg/flute_Fs5_very-long_pianissimo_normal.ogg,
+            distanceMax = 650,
+            reverbFactor = 0.1,
+            volume = 0.7,
+            pitch = 1.4142135624,
+        }
+    }
+
+    sound FluteCs4 {
+        category = EHE: Main,
+        loop = false,
+        is3D = true,
+        clip {
+            file = media/sound/Philharmonia/Flute/ogg/flute_Fs5_very-long_pianissimo_normal.ogg,
+            distanceMax = 650,
+            reverbFactor = 0.1,
+            volume = 0.7,
+            pitch = 1.4983070769,
+        }
+    }
+
+    sound FluteD4 {
+        category = EHE: Main,
+        loop = false,
+        is3D = true,
+        clip {
+            file = media/sound/Philharmonia/Flute/ogg/flute_Gs6_very-long_pianissimo_normal.ogg,
+            distanceMax = 650,
+            reverbFactor = 0.1,
+            volume = 0.7,
+            pitch = 0.7071067812,
+        }
+    }
+
+    sound FluteDs4 {
+        category = EHE: Main,
+        loop = false,
+        is3D = true,
+        clip {
+            file = media/sound/Philharmonia/Flute/ogg/flute_Gs6_very-long_pianissimo_normal.ogg,
+            distanceMax = 650,
+            reverbFactor = 0.1,
+            volume = 0.7,
+            pitch = 0.7491535384,
+        }
+    }
+
+    sound FluteE4 {
+        category = EHE: Main,
+        loop = false,
+        is3D = true,
+        clip {
+            file = media/sound/Philharmonia/Flute/ogg/flute_Gs6_very-long_pianissimo_normal.ogg,
+            distanceMax = 650,
+            reverbFactor = 0.1,
+            volume = 0.7,
+            pitch = 0.7937005260,
+        }
+    }
+
+    sound FluteF4 {
+        category = EHE: Main,
+        loop = false,
+        is3D = true,
+        clip {
+            file = media/sound/Philharmonia/Flute/ogg/flute_Gs6_very-long_pianissimo_normal.ogg,
+            distanceMax = 650,
+            reverbFactor = 0.1,
+            volume = 0.7,
+            pitch = 0.8408964153,
+        }
+    }
+
+    sound FluteFs4 {
+        category = EHE: Main,
+        loop = false,
+        is3D = true,
+        clip {
+            file = media/sound/Philharmonia/Flute/ogg/flute_Gs6_very-long_pianissimo_normal.ogg,
+            distanceMax = 650,
+            reverbFactor = 0.1,
+            volume = 0.7,
+            pitch = 0.8908987181,
+        }
+    }
+
+    sound FluteG4 {
+        category = EHE: Main,
+        loop = false,
+        is3D = true,
+        clip {
+            file = media/sound/Philharmonia/Flute/ogg/flute_Gs6_very-long_pianissimo_normal.ogg,
+            distanceMax = 650,
+            reverbFactor = 0.1,
+            volume = 0.7,
+            pitch = 0.9438743127,
+        }
+    }
+
+    sound FluteGs4 {
+        category = EHE: Main,
+        loop = false,
+        is3D = true,
+        clip {
+            file = media/sound/Philharmonia/Flute/ogg/flute_Gs6_very-long_pianissimo_normal.ogg,
+            distanceMax = 650,
+            reverbFactor = 0.1,
+            volume = 0.7,
+        }
+    }
+
+    sound FluteA4 {
+        category = EHE: Main,
+        loop = false,
+        is3D = true,
+        clip {
+            file = media/sound/Philharmonia/Flute/ogg/flute_Gs6_very-long_pianissimo_normal.ogg,
+            distanceMax = 650,
+            reverbFactor = 0.1,
+            volume = 0.7,
+            pitch = 1.0594630944,
+        }
+    }
+
+    sound FluteAs4 {
+        category = EHE: Main,
+        loop = false,
+        is3D = true,
+        clip {
+            file = media/sound/Philharmonia/Flute/ogg/flute_Gs6_very-long_pianissimo_normal.ogg,
+            distanceMax = 650,
+            reverbFactor = 0.1,
+            volume = 0.7,
+            pitch = 1.1224620483,
+        }
+    }
+
+    sound FluteB4 {
+        category = EHE: Main,
+        loop = false,
+        is3D = true,
+        clip {
+            file = media/sound/Philharmonia/Flute/ogg/flute_Gs6_very-long_pianissimo_normal.ogg,
+            distanceMax = 650,
+            reverbFactor = 0.1,
+            volume = 0.7,
+            pitch = 1.1892071150,
+        }
+    }
+
+    sound FluteC5 {
+        category = EHE: Main,
+        loop = false,
+        is3D = true,
+        clip {
+            file = media/sound/Philharmonia/Flute/ogg/flute_Gs6_very-long_pianissimo_normal.ogg,
+            distanceMax = 650,
+            reverbFactor = 0.1,
+            volume = 0.7,
+            pitch = 1.2599210499,
+        }
+    }
+}

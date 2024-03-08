@@ -24,13 +24,13 @@ local HEIGHT = WHITE_KEY_HEIGHT + ISCollapsableWindow.TitleBarHeight()
 local X = getCore():getScreenWidth() / 2 - WIDTH / 2
 local Y = getCore():getScreenHeight() - HEIGHT - 75
 
-function PianoKeyboard:new(instrument, iSelectrical)
+function PianoKeyboard:new(instrument, hasDistortion)
     local o = ISCollapsableWindow:new(X, Y, WIDTH, HEIGHT);
     setmetatable(o, self)
     self.__index = self
 
     o.instrument = instrument
-    o.iSelectrical = iSelectrical
+    o.hasDistortion = hasDistortion
 
     o.textureKeyWhite = getTexture('media/ui/piano/Keys/White1.png');
     o.textureKeyWhitePressed = getTexture('media/ui/piano/Keys/White1Pressed.png');
@@ -63,13 +63,11 @@ function PianoKeyboard:initialise()
     self.distortionButton.backgroundColorMouseOver.a = 0.7
     self.distortionButton:setImage(self.distortionButtonOffImage)
     self:addChild(self.distortionButton)
-    -- todo: I wanted to add some mods for the bass as well but I did not
-    -- find samples. It would be nice to have multiple options for all instruments
-    -- like steel chords for the classical guitar
-    self.distortionButton:setVisible(self.instrument == "GuitarElectric");
+    self.distortionButton:setVisible(self.hasDistortion);
 
     self:setResizable(false)
     self:addToUIManager()
+    -- todo: Do I want that? What is it for?
     -- ISLayoutManager.RegisterWindow('PianoKeyboard', PianoKeyboard, self);
 end
 

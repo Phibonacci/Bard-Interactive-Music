@@ -7,4 +7,6 @@ ContextMenu_EN = {
     ContextMenu_Bard_PlayFlute = "Play Flute",
     ContextMenu_Bard_PlaySaxophone = "Play Saxophone",
     ContextMenu_Bard_PlayTrumpet = "Play Trumpet",
+    ContextMenu_Bard_PlayViolin = "Play Violin",
+    ContextMenu_Bard_PlayPiano = "Play Piano",
 }
