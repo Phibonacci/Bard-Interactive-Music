@@ -182,7 +182,7 @@ function PianoKeyboard:getBlackKey(x, y)
     then
         local scaleOffset = math.floor(keyIndex / 7)
         local keyOffset = keyIndex % 7
-        if keyOffset == 2 or keyOffset == 6 then
+        if keyOffset == 2 or keyOffset == 6 or scaleOffset == 3 then
             return nil -- no E# or B#
         end
         return ScaleOffsetToKeyName(scaleOffset, keyOffset, true)
