@@ -75,5 +75,7 @@
         "ISMouseDrag",
         "isMouseButtonDown",
         "addSound",
+        "ISWorldObjectContextMenu",
+        "luautils",
     ]
 }
