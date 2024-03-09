@@ -16,8 +16,6 @@ local ItemToInstrumentName = {
     ['Base.Saxophone'] = 'Saxophone',
     ['Base.Trumpet'] = 'Trumpet',
     ['Base.Violin'] = 'Violin',
-    ['Base.WesternPiano'] = 'Piano',
-    ['Base.BlackGrandPiano'] = 'GrandPiano',
 }
 
 
@@ -32,9 +30,6 @@ function TAPlayMusicFromInventory:new(character, item)
 end
 
 function TAPlayMusicFromInventory:equipInstrumentOnSecondaryHand()
-    if self.isWorldItem then
-        return
-    end
     if self.character:isItemInBothHands(self.item) then
         self.handItem = 'BothHands'
     elseif self.character:isPrimaryHandItem(self.item) then
@@ -57,7 +52,7 @@ local ItemToAnimation = {
     ['Base.GuitarElectricBassRed'] = 'BardPlayGuitarBass',
     ['Base.Keytar'] = 'BardPlaySynthesizer',
     ['Base.Flute'] = 'BardPlayFlute',
-    -- ['Base.Saxophone'] = 'BardPlaySaxophone',
+    ['Base.Saxophone'] = 'BardPlaySaxophone',
     ['Base.Trumpet'] = 'BardPlayTrumpet',
     ['Base.Violin'] = 'BardPlayViolin',
 }
@@ -66,6 +61,10 @@ function TAPlayMusicFromInventory:startAnimation()
     local animationName = ItemToAnimation[self.item:getFullType()]
     if animationName ~= nil then
         self:setActionAnim(animationName)
+    else
+        print('Unknown animation for '
+            .. self.item:getFullType()
+            .. ' in TAPlayMusicFromInventory:startAnimation()')
     end
 end
 
@@ -76,9 +75,6 @@ function TAPlayMusicFromInventory:start()
 end
 
 function TAPlayMusicFromInventory:EquipInstrumentAsBefore()
-    if self.isWorldItem then
-        return
-    end
     if self.handItem == 'PrimaryHand' then
         self.character:setPrimaryHandItem(self.item)
         self.character:setSecondaryHandItem(nil)

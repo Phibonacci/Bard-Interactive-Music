@@ -48,19 +48,18 @@ local function PlayerObjectContextMenu(playerIndex, context, items)
 end
 
 local WorldItemToActionInfo = {
-    ['recreational_01_8']  = { action = 'ContextMenu_Bard_PlayPiano', facing = 'south', side = 'left', instrument = 'Piano', rightSide = 'recreational_01_9' },
-    ['recreational_01_9']  = { action = 'ContextMenu_Bard_PlayPiano', facing = 'south', side = 'right', instrument = 'Piano', rightSide = 'recreational_01_9' },
-    ['recreational_01_12'] = { action = 'ContextMenu_Bard_PlayPiano', facing = 'east', side = 'left', instrument = 'Piano', rightSide = 'recreational_01_12' },
-    ['recreational_01_13'] = { action = 'ContextMenu_Bard_PlayPiano', facing = 'east', side = 'right', instrument = 'Piano', rightSide = 'recreational_01_13' },
-    ['recreational_01_40'] = { action = 'ContextMenu_Bard_PlayPiano', facing = 'south', side = 'left', instrument = 'GrandPiano', rightSide = 'recreational_01_41' },
-    ['recreational_01_41'] = { action = 'ContextMenu_Bard_PlayPiano', facing = 'south', side = 'right', instrument = 'GrandPiano', rightSide = 'recreational_01_41' },
-    ['recreational_01_48'] = { action = 'ContextMenu_Bard_PlayPiano', facing = 'east', side = 'left', instrument = 'GrandPiano', rightSide = 'recreational_01_49' },
-    ['recreational_01_49'] = { action = 'ContextMenu_Bard_PlayPiano', facing = 'east', side = 'right', instrument = 'GrandPiano', rightSide = 'recreational_01_49' },
+    ['recreational_01_8']  = { action = 'ContextMenu_Bard_PlayPiano', facing = 'south', side = 'left', instrument = 'Piano', upperSide = 'recreational_01_8' },
+    ['recreational_01_9']  = { action = 'ContextMenu_Bard_PlayPiano', facing = 'south', side = 'right', instrument = 'Piano', upperSide = 'recreational_01_8' },
+    ['recreational_01_12'] = { action = 'ContextMenu_Bard_PlayPiano', facing = 'east', side = 'left', instrument = 'Piano', upperSide = 'recreational_01_13' },
+    ['recreational_01_13'] = { action = 'ContextMenu_Bard_PlayPiano', facing = 'east', side = 'right', instrument = 'Piano', upperSide = 'recreational_01_13' },
+    ['recreational_01_40'] = { action = 'ContextMenu_Bard_PlayPiano', facing = 'south', side = 'left', instrument = 'GrandPiano', upperSide = 'recreational_01_40' },
+    ['recreational_01_41'] = { action = 'ContextMenu_Bard_PlayPiano', facing = 'south', side = 'right', instrument = 'GrandPiano', upperSide = 'recreational_01_40' },
+    ['recreational_01_48'] = { action = 'ContextMenu_Bard_PlayPiano', facing = 'east', side = 'left', instrument = 'GrandPiano', upperSide = 'recreational_01_49' },
+    ['recreational_01_49'] = { action = 'ContextMenu_Bard_PlayPiano', facing = 'east', side = 'right', instrument = 'GrandPiano', upperSide = 'recreational_01_49' },
 }
 
--- IsoSquare has a getE() function that can return nil for no apparent reason
-local function getEastSquare(square)
-    return getWorld():getCell():getGridSquare(square:getX() + 1, square:getY(), square:getZ())
+local function getWestSquare(square)
+    return getWorld():getCell():getGridSquare(square:getX() - 1, square:getY(), square:getZ())
 end
 
 -- IsoSquare has a getS() function that can return nil for no apparent reason
@@ -68,41 +67,55 @@ local function getSouthSquare(square)
     return getWorld():getCell():getGridSquare(square:getX(), square:getY() - 1, square:getZ())
 end
 
-local function getPianoRightSide(pianoSquare, actionInfo)
-    local rightPianoSquare
-    if actionInfo.facing == 'south' and actionInfo.side == 'left' then
-        rightPianoSquare = getEastSquare(pianoSquare)
-        if rightPianoSquare == nil then
-            print('rightPianoSquare south is nil')
-        end
+local function getPianoUpperSide(pianoSquare, actionInfo)
+    local upperPianoSquare
+    if actionInfo.facing == 'south' and actionInfo.side == 'right' then
+        upperPianoSquare = getWestSquare(pianoSquare)
     elseif actionInfo.facing == 'east' and actionInfo.side == 'left' then
-        rightPianoSquare = getSouthSquare(pianoSquare)
-        if rightPianoSquare == nil then
-            print('rightPianoSquare east is nil')
-        end
+        upperPianoSquare = getSouthSquare(pianoSquare)
     else
-        rightPianoSquare = pianoSquare
+        upperPianoSquare = pianoSquare
     end
-    local rightSidePianoObject = nil
-    for i = 0, rightPianoSquare:getObjects():size() - 1 do
-        local object = rightPianoSquare:getObjects():get(i)
-        if actionInfo.rightSide == object:getSprite():getName() then
-            rightSidePianoObject = object
+    local upperSidePianoObject = nil
+    for i = 0, upperPianoSquare:getObjects():size() - 1 do
+        local object = upperPianoSquare:getObjects():get(i)
+        if actionInfo.upperSide == object:getSprite():getName() then
+            upperSidePianoObject = object
         end
     end
-    return rightSidePianoObject
+    return upperSidePianoObject
 end
 
-local function onPlayPiano(worldobjects, player, square, pianoObject, actionInfo)
-    local rightSidePianoObject = getPianoRightSide(square, actionInfo)
-    if rightSidePianoObject == nil then
+-- todo: add very single suitable seat in the world
+local SeatSpriteName = {
+    ["recreational_01_10"] = true,
+    ["recreational_01_11"] = true,
+    ["recreational_01_14"] = true,
+    ["recreational_01_15"] = true,
+}
+
+local function hasSeat(squareFacingPiano)
+    for i = 0, squareFacingPiano:getObjects():size() - 1 do
+        local object = squareFacingPiano:getObjects():get(i)
+        local spriteName = object:getSprite():getName()
+        if SeatSpriteName[spriteName] then
+            return true
+        end
+    end
+    return false
+end
+
+local function onPlayPiano(worldobjects, player, square, actionInfo)
+    local upperSidePianoObject = getPianoUpperSide(square, actionInfo)
+    if upperSidePianoObject == nil then
         return nil
     end
     -- it's alright, this square is working with getS() and getE(), very consistant API, no problem here
-    local squareFacingPiano = actionInfo.facing == "south" and rightSidePianoObject:getSquare():getS()
-        or rightSidePianoObject:getSquare():getE()
+    local squareFacingPiano = actionInfo.facing == "south" and upperSidePianoObject:getSquare():getS()
+        or upperSidePianoObject:getSquare():getE()
     ISTimedActionQueue.add(ISWalkToTimedAction:new(player, squareFacingPiano))
-    ISTimedActionQueue.add(TAPlayMusicFromWorld:new(player, actionInfo.instrument, rightSidePianoObject))
+    ISTimedActionQueue.add(TAPlayMusicFromWorld:new(player, actionInfo.instrument,
+        upperSidePianoObject, actionInfo.facing, hasSeat(squareFacingPiano)))
 end
 
 local function WorldObjectContextMenu(playerIndex, context, worldobjects, test)
@@ -120,9 +133,12 @@ local function WorldObjectContextMenu(playerIndex, context, worldobjects, test)
                     addedContext[item:getWorldObjectIndex()] = true
                     context:addOption(getText("ContextMenu_Bard_PlayPiano"), worldobjects,
                         onPlayPiano,
-                        player, square, worldobject, WorldItemToActionInfo[spriteName])
-                else
+                        player, square, WorldItemToActionInfo[spriteName])
                 end
+            else
+                context:addOption("Sprite Name", worldobjects,
+                    function() print(spriteName) end
+                )
             end
         end
     end

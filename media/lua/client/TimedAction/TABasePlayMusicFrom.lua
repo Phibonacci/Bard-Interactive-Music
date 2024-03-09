@@ -14,7 +14,7 @@ function TABasePlayMusicFrom:new(character, instrument, hasDistortion)
     o.hasDistortion = hasDistortion
     o.stopOnWalk = true
     o.stopOnRun = true
-    o.stopOnAim = false
+    o.stopOnAim = true
     o.maxTime = -1
     o.handItem = nil
     o.isPlaying = false
