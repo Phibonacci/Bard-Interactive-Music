@@ -84,13 +84,7 @@ end
 
 function PianoKeyboard:render()
     ISCollapsableWindow.render(self)
-    self:drawDistortionButton()
     self:drawKeys()
-end
-
-function PianoKeyboard:drawDistortionButton()
-    -- self:drawTextureScaled(texture, x + SPACE_AROUND_WHITE_KEY, self:titleBarHeight(),
-    --     WHITE_KEY_TEXTURE_WIDTH, drawHeight, 1, 1, 1, 1)
 end
 
 function PianoKeyboard:drawKeys()
@@ -250,8 +244,7 @@ function PianoKeyboard:releaseKeyWithMouse()
 end
 
 function PianoKeyboard:onMouseUp(x, y)
-    if self.currentKeyPressed ~= nil
-    then
+    if self.currentKeyPressed ~= nil then
         self:releaseKeyWithMouse()
     end
 
