@@ -4,9 +4,18 @@ A [Project Zomboid](https://projectzomboid.com) mod to play music with the keybo
 
 ![Bard Interactive Music preview](poster.png)
 
+# Features
+
+- Play music notes from any instrument from the context menu
+- Multiplayer support
+- Zombies can hear the music
+- Play from a virtual keyboard or press a key to play a note
+- Pianos are also supported with two different notes recording
+- Electric guitar has a distortion mod
+
 ## License
 
-The [code and the assets](https://github.com/Phibonacci/Bard-Interactive-Music) are under MIT unless a licence file is saying otherwise.
+The [code and the assets](https://github.com/Phibonacci/Bard-Interactive-Music) are under MIT unless a license file is saying otherwise.
 
 ## Credits
 
@@ -16,7 +25,7 @@ The [code and the assets](https://github.com/Phibonacci/Bard-Interactive-Music) 
 
 ### Sound banks
 
-[Spanish classical guitar](https://freepats.zenvoid.org/Guitar/acoustic-guitar.html) by by roberto@zenvoid.org (CC0 1.0)
+[Spanish classical guitar](https://freepats.zenvoid.org/Guitar/acoustic-guitar.html) by roberto@zenvoid.org (CC0 1.0)
 
 [FSBS Electric Guitar Clean #1 from freepats.zenvoid.org](https://freepats.zenvoid.org/ElectricGuitar/clean-electric-guitar.html) (CC0 1.0)
 
