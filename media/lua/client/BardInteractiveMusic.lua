@@ -135,10 +135,6 @@ local function WorldObjectContextMenu(playerIndex, context, worldobjects, test)
                         onPlayPiano,
                         player, square, WorldItemToActionInfo[spriteName])
                 end
-            else
-                context:addOption("Sprite Name", worldobjects,
-                    function() print(spriteName) end
-                )
             end
         end
     end

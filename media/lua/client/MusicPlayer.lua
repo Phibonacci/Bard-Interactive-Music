@@ -11,6 +11,20 @@ function MusicPlayer.getInstance()
     return instance
 end
 
+local InstrumentParameters = {
+    ["GuitarAcoustic"] = { baseTime = 500, fadingTime = 200, polyphonic = true },
+    ["Banjo"] = { baseTime = 300, fadingTime = 150, polyphonic = true },
+    ["GuitarElectric"] = { baseTime = 250, fadingTime = 150, polyphonic = true },
+    ["GuitarBass"] = { baseTime = 350, fadingTime = 150, polyphonic = true },
+    ["Synthesizer"] = { baseTime = 250, fadingTime = 150, polyphonic = true },
+    ["Flute"] = { baseTime = 0, fadingTime = 50, polyphonic = false },
+    ["Saxophone"] = { baseTime = 0, fadingTime = 50, polyphonic = false },
+    ["Trumpet"] = { baseTime = 0, fadingTime = 50, polyphonic = false },
+    ["Violin"] = { baseTime = 50, fadingTime = 100, polyphonic = true },
+    ["Piano"] = { baseTime = 500, fadingTime = 200, polyphonic = true },
+    ["GrandPiano"] = { baseTime = 500, fadingTime = 200, polyphonic = true },
+}
+
 function MusicPlayer:new()
     assert(instance == nil,
         'MusicPlayer is a singleton, call getInstance instead')
@@ -58,9 +72,10 @@ function MusicPlayer:playNote(sourcePlayerId, instrument, note, isDistorted)
     end
 
     local hash = GetKeyFromNoteAndPlayerId(note, sourcePlayerId)
-    if self.soundsPlaying[hash] then
+    if InstrumentParameters[instrument].polyphonic == true and self.soundsPlaying[hash] then
         table.insert(self.soundsStopping, self.soundsPlaying[hash])
-        -- self.soundsStopping[hash] = self.soundsPlaying[hash]
+    else
+        self:stop()
     end
     self.soundsPlaying[hash] = {
         emitter = soundEmitter,
@@ -92,26 +107,12 @@ function GetCurrentTimeInMs()
     return Calendar.getInstance():getTimeInMillis()
 end
 
-local minimalNoteDurationByInstrument = {
-    ["GuitarAcoustic"] = { baseTime = 500, fadingTime = 200, polyphonic = true },
-    ["Banjo"] = { baseTime = 300, fadingTime = 150, polyphonic = true },
-    ["GuitarElectric"] = { baseTime = 250, fadingTime = 150, polyphonic = true },
-    ["GuitarBass"] = { baseTime = 350, fadingTime = 150, polyphonic = true },
-    ["Synthesizer"] = { baseTime = 250, fadingTime = 150, polyphonic = true },
-    ["Flute"] = { baseTime = 0, fadingTime = 50, polyphonic = false },
-    ["Saxophone"] = { baseTime = 0, fadingTime = 50, polyphonic = false },
-    ["Trumpet"] = { baseTime = 0, fadingTime = 50, polyphonic = false },
-    ["Violin"] = { baseTime = 50, fadingTime = 100, polyphonic = true },
-    ["Piano"] = { baseTime = 500, fadingTime = 200, polyphonic = true },
-    ["GrandPiano"] = { baseTime = 500, fadingTime = 200, polyphonic = true },
-}
-
 function MusicPlayer:update()
     local idsToRemove = {}
     for index, sound in pairs(self.soundsStopping) do
         assert(sound.startingTime ~= nil, "Note starting time not found")
         local delta = GetCurrentTimeInMs() - sound.startingTime
-        local duration = minimalNoteDurationByInstrument[sound.instrument]
+        local duration = InstrumentParameters[sound.instrument]
         if delta >
             duration.baseTime
             + (self.baseVolume - sound.volume) / self.baseVolume
