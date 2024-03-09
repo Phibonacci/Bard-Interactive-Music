@@ -1,8 +1,8 @@
-# Bard Interactive Player
+# Bard Interactive Music
 
 A [Project Zomboid](https://projectzomboid.com) mod to play music with the keyboard.
 
-![Bard Interactive Player preview](poster.png)
+![Bard Interactive Music preview](poster.png)
 
 ## Licence
 
