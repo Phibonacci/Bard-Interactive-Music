@@ -111,7 +111,6 @@ function PianoKeyboard:drawKeysOfScale(scaleOffset)
     local scaleX = scaleOffset * SCALE_WIDTH
     for keyOffset = 0, 6 do
         local keyName = ScaleOffsetToKeyName(scaleOffset, keyOffset, false)
-        -- C1,D1,E1..A1,B1,C2 this is not the note octave but the key positioning
         self:drawWhiteKey(self.keyPressed[keyName] ~= nil,
             scaleX + keyOffset * WHITE_KEY_WIDTH)
     end
