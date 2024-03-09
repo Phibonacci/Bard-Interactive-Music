@@ -4,9 +4,9 @@ A [Project Zomboid](https://projectzomboid.com) mod to play music with the keybo
 
 ![Bard Interactive Music preview](poster.png)
 
-## Licence
+## License
 
-The code and the assets are under MIT unless a licence file is saying otherwise.
+The [code and the assets](https://github.com/Phibonacci/Bard-Interactive-Music) are under MIT unless a licence file is saying otherwise.
 
 ## Credits
 
