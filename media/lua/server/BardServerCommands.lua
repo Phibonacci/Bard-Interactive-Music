@@ -27,7 +27,7 @@ BardServerCommands['ClientSendEndNote'] = function(player, args)
     for i = 0, connectedPlayers:size() - 1 do
         local connectedPlayer = connectedPlayers:get(i)
         if connectedPlayer:getOnlineID() ~= args.sourceId
-            and connectedPlayer:DistTo(player:getX(), player:getY()) < 60 then
+            and connectedPlayer:DistTo(player:getX(), player:getY()) < 80 then
             SendBardServerCommand(connectedPlayer, 'ServerSendEndNote', args)
         end
     end

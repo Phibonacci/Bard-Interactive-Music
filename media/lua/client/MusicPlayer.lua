@@ -48,6 +48,17 @@ local function GetKeyFromNoteAndPlayerId(note, playerId)
     return playerId .. note
 end
 
+function MusicPlayer:setEmitterVolume(emitter, soundId, volume, sourceId)
+    local player = getPlayer()
+    local source = getPlayerByOnlineID(sourceId)
+    local modifiedVolume = volume
+    if isClient() and player:getOnlineID() ~= sourceId then
+        local distance = player:DistTo(source:getX(), source:getY())
+        modifiedVolume = math.max(0, volume - volume * (distance / 40))
+    end
+    emitter:setVolume(soundId, modifiedVolume)
+end
+
 function MusicPlayer:playNote(sourcePlayerId, instrument, note, isDistorted)
     local instrumentNote = GetFileName(instrument, note, isDistorted)
     print('playing ' .. instrumentNote)
@@ -64,18 +75,17 @@ function MusicPlayer:playNote(sourcePlayerId, instrument, note, isDistorted)
     local square = source:getSquare()
     local soundId = soundEmitter:playSoundImpl(instrumentNote, square)
     addSound(source, square:getX(), square:getY(), square:getZ(), 40, self.baseVolume)
+    -- I think this is useless as it's already set in the sound txt file but I'm too lazy to make sure
     if isClient() and player:getOnlineID() ~= sourcePlayerId then
         soundEmitter:set3D(soundId, true)
-        local distance = player:DistTo(source:getX(), source:getY())
-        local volume = self.baseVolume - self.baseVolume * (distance / 40)
-        soundEmitter:setVolume(soundId, volume)
     end
+    self:setEmitterVolume(soundEmitter, soundId, self.baseVolume, sourcePlayerId)
 
     local hash = GetKeyFromNoteAndPlayerId(note, sourcePlayerId)
     if InstrumentParameters[instrument].polyphonic == true and self.soundsPlaying[hash] then
         table.insert(self.soundsStopping, self.soundsPlaying[hash])
-    else
-        self:stop()
+    elseif InstrumentParameters[instrument].polyphonic == false then
+        self:stopPlayerNotes(sourcePlayerId)
     end
     self.soundsPlaying[hash] = {
         emitter = soundEmitter,
@@ -92,14 +102,24 @@ function MusicPlayer:stopNote(sourcePlayerId, note)
     local hash = GetKeyFromNoteAndPlayerId(note, sourcePlayerId)
     if self.soundsPlaying[hash] then
         table.insert(self.soundsStopping, self.soundsPlaying[hash])
-        -- self.soundsStopping[hash] = self.soundsPlaying[hash]
         self.soundsPlaying[hash] = nil
     end
 end
 
-function MusicPlayer:stop()
+function MusicPlayer:stopPlayerNotes(playerId)
     for _, sound in pairs(self.soundsPlaying) do
-        self:stopNote(sound.sourcePlayerId, sound.note)
+        if sound.sourcePlayerId == playerId then
+            self:stopNote(sound.sourcePlayerId, sound.note)
+        end
+    end
+end
+
+function MusicPlayer:stopPlayer(action)
+    for _, sound in pairs(self.soundsPlaying) do
+        if sound.sourcePlayerId == getPlayer():getOnlineID() then
+            self:stopNote(sound.sourcePlayerId, sound.note)
+            action(sound.note)
+        end
     end
 end
 
@@ -120,14 +140,7 @@ function MusicPlayer:update()
         then
             sound.volume = sound.volume - 0.1
             if sound.volume <= 0 then sound.volume = 0 end
-            local volume = sound.volume
-            local player = getPlayer()
-            if isClient() and player:getOnlineID() ~= sound.sourcePlayerId then
-                local source = getPlayerByOnlineID(sound.sourcePlayerId)
-                local distance = player:DistTo(source:getX(), source:getY())
-                volume = sound.volume - sound.volume * (distance / 40)
-            end
-            sound.emitter:setVolume(sound.soundId, volume)
+            self:setEmitterVolume(sound.emitter, sound.soundId, sound.volume, sound.sourcePlayerId)
         end
         if sound.volume <= 0 then
             table.insert(idsToRemove, index)

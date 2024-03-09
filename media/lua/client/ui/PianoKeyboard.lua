@@ -1,5 +1,6 @@
 local PianoKeyboard = ISCollapsableWindow:derive("PianoKeyboard");
 local MusicPlayer = require 'MusicPlayer'
+local BardClientSendCommands = require 'BardClientSendCommands'
 
 local NOTES_IN_SCALE = 7 -- A, B, C, D, E, F, G
 local KEY_RATIO = 7
@@ -209,6 +210,7 @@ function PianoKeyboard:pressBlackKey(x, y)
     self.keyPressed[keyName] = true
     self.currentKeyPressed = keyName
     MusicPlayer.getInstance():playNote(getPlayer():getOnlineID(), self.instrument, keyName, self:isDistorted())
+    BardClientSendCommands.sendStartNote(getPlayer():getOnlineID(), self.instrument, keyName, self:isDistorted())
     return true
 end
 
@@ -220,6 +222,7 @@ function PianoKeyboard:pressWhiteKey(x, y)
     self.keyPressed[keyName] = true
     self.currentKeyPressed = keyName
     MusicPlayer.getInstance():playNote(getPlayer():getOnlineID(), self.instrument, keyName, self:isDistorted())
+    BardClientSendCommands.sendStartNote(getPlayer():getOnlineID(), self.instrument, keyName, self:isDistorted())
     return true
 end
 
@@ -241,6 +244,7 @@ function PianoKeyboard:releaseKeyWithMouse()
     self.keyPressed[self.currentKeyPressed] = nil
     if self.currentKeyPressed ~= nil then
         MusicPlayer.getInstance():stopNote(getPlayer():getOnlineID(), self.currentKeyPressed)
+        BardClientSendCommands.sendStopNote(getPlayer():getOnlineID(), self.currentKeyPressed)
     end
     self.currentKeyPressed = nil
 end

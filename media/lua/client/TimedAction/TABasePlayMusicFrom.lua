@@ -127,8 +127,10 @@ function TABasePlayMusicFrom:terminateAction()
     Events.OnKeyPressed.Remove(self.onKeyReleasedLambda)
     KeybindManager.getInstance():restoreKeys()
     self.keyboard:close()
-    self.isPlaying = false;
-    MusicPlayer.getInstance():stop()
+    self.isPlaying = false
+    MusicPlayer.getInstance():stopPlayer(function(note)
+        BardClientSendCommands.sendStopNote(self.character:getOnlineID(), note)
+    end)
 end
 
 function TABasePlayMusicFrom:stop()
