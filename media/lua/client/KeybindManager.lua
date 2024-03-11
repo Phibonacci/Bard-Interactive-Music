@@ -1,6 +1,20 @@
 local KeybindManager = {}
 local KeyCode = require 'KeyCode'
 
+function KeybindManager.getKey(actionName)
+    for _, binding in ipairs(keyBinding) do
+        if binding.value == actionName then
+            if binding.key == 0 then -- no default keybind
+                return nil
+            else
+                return binding.key
+            end
+            break
+        end
+    end
+    return nil
+end
+
 local instance = nil
 function KeybindManager.getInstance()
     if instance == nil then

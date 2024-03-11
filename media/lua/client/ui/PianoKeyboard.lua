@@ -1,6 +1,7 @@
 local PianoKeyboard = ISCollapsableWindow:derive("PianoKeyboard");
 local MusicPlayer = require 'MusicPlayer'
 local BardClientSendCommands = require 'BardClientSendCommands'
+local KeybindManager = require 'KeybindManager'
 
 local NOTES_IN_SCALE = 7 -- A, B, C, D, E, F, G
 local KEY_RATIO = 7
@@ -37,10 +38,27 @@ function PianoKeyboard:new(instrument, hasDistortion)
     o.textureKeyWhitePressed = getTexture('media/ui/piano/Keys/White1Pressed.png');
     o.textureKeyBlack = getTexture('media/ui/piano/Flats + Sharps/White.png')
     o.textureKeyBlackPressed = getTexture('media/ui/piano/Flats + Sharps/WhitePressed.png')
+
+    o.textureKeyWhiteHoleRound = getTexture('media/ui/piano-white-key-hole-round.png')
+    o.textureKeyWhiteHoleRoundPressed = getTexture('media/ui/piano-white-key-hole-round-pressed.png')
+    o.textureKeyWhiteHole = getTexture('media/ui/piano-white-key-hole.png')
+    o.textureKeyWhiteHolePressed = getTexture('media/ui/piano-white-key-hole-pressed.png')
+
+    o.textureKeyBlackHoleRound = getTexture('media/ui/piano-black-key-hole-round.png')
+    o.textureKeyBlackHoleRoundPressed = getTexture('media/ui/piano-black-key-hole-round-pressed.png')
+    o.textureKeyBlackHole = getTexture('media/ui/piano-black-key-hole.png')
+    o.textureKeyBlackHolePressed = getTexture('media/ui/piano-black-key-hole-pressed.png')
+
+    o.showNotesOnImage = getTexture('media/ui/note-on-icon.png')
+    o.showNotesOffImage = getTexture('media/ui/note-off-icon.png')
+    o.showKeybindsOnImage = getTexture('media/ui/keybind-on-icon.png')
+    o.showKeybindsOffImage = getTexture('media/ui/keybind-off-icon.png')
     o.distortionButtonOnImage = getTexture('media/ui/thunder-on-icon.png')
     o.distortionButtonOffImage = getTexture('media/ui/thunder-off-icon.png')
 
     o.closing = false
+    o.isShowingNotes = false
+    o.isShowingKeybinds = false
     o.distorted = false
     o.currentKeyPressed = nil
     o.keyPressed = {}
@@ -55,9 +73,30 @@ function PianoKeyboard:initialise()
     self:setInfo(getText("SurvivalGuide_BardInteractiveMusic"))
 
     local th = self:titleBarHeight()
-    self.distortionButton = ISButton:new(
+
+    self.showNotesButton = ISButton:new(
         self.infoButton:getRight() + 1, 0, th, th,
-        "", self, function(self, button) self:onDistortionButton(button) end)
+        "", self, function(window, button) window:onShowNotesButton(button) end)
+    self.showNotesButton:initialise()
+    self.showNotesButton.borderColor.a = 0.0
+    self.showNotesButton.backgroundColor.a = 0.0
+    self.showNotesButton.backgroundColorMouseOver.a = 0.7
+    self.showNotesButton:setImage(self.showNotesOffImage)
+    self:addChild(self.showNotesButton)
+
+    self.showKeybindsButton = ISButton:new(
+        self.showNotesButton:getRight() + 1, 0, th, th,
+        "", self, function(window, button) window:onShowKeybindsButton(button) end)
+    self.showKeybindsButton:initialise()
+    self.showKeybindsButton.borderColor.a = 0.0
+    self.showKeybindsButton.backgroundColor.a = 0.0
+    self.showKeybindsButton.backgroundColorMouseOver.a = 0.7
+    self.showKeybindsButton:setImage(self.showKeybindsOffImage)
+    self:addChild(self.showKeybindsButton)
+
+    self.distortionButton = ISButton:new(
+        self.showKeybindsButton:getRight() + 1, 0, th, th,
+        "", self, function(window, button) window:onDistortionButton(button) end)
     self.distortionButton:initialise()
     self.distortionButton.borderColor.a = 0.0
     self.distortionButton.backgroundColor.a = 0.0
@@ -92,6 +131,7 @@ function PianoKeyboard:drawKeys()
         self:drawKeysOfScale(scaleOffset)
     end
     local keyName = ScaleOffsetToKeyName(3, 0, false)
+    -- the C5 key is alone
     self:drawWhiteKey(self.keyPressed[keyName] ~= nil,
         3 * SCALE_WIDTH)
 end
@@ -124,7 +164,18 @@ function PianoKeyboard:drawKeysOfScale(scaleOffset)
 end
 
 function PianoKeyboard:drawWhiteKey(isPressed, x)
-    local texture = isPressed and self.textureKeyWhitePressed or self.textureKeyWhite
+    local textureKey
+    local textureKeybindBackground
+    local textureNoteBackground
+    if isPressed then
+        textureKey = self.textureKeyWhitePressed
+        textureKeybindBackground = self.textureKeyWhiteHolePressed
+        textureNoteBackground = self.textureKeyWhiteHoleRoundPressed
+    else
+        textureKey = self.textureKeyWhite
+        textureKeybindBackground = self.textureKeyWhiteHole
+        textureNoteBackground = self.textureKeyWhiteHoleRound
+    end
     local drawHeight = WHITE_KEY_HEIGHT
     -- when self:getMaxDrawHeight() is 'cleared' it is worth -1... come on!
     -- when it is not it cannot be lower than self:titleBarHeight() which is
@@ -135,12 +186,51 @@ function PianoKeyboard:drawWhiteKey(isPressed, x)
     if drawHeight <= 0 then
         return
     end
-    self:drawTextureScaled(texture, x + SPACE_AROUND_WHITE_KEY, self:titleBarHeight(),
+    local y = self:titleBarHeight()
+    self:drawTextureScaled(textureKey, x + SPACE_AROUND_WHITE_KEY, y,
         WHITE_KEY_TEXTURE_WIDTH, drawHeight, 1, 1, 1, 1)
+    local note = self:getWhiteKey(x, y)
+    if self.isShowingNotes then
+        self:drawTextureScaled(textureNoteBackground,
+            x + SPACE_AROUND_WHITE_KEY + 4,
+            y + drawHeight * 50 / 64,
+            WHITE_KEY_TEXTURE_WIDTH - 8, 20, 1, 1, 1, 1)
+        self:drawTextCentre(note,
+            x + WHITE_KEY_WIDTH / 2,
+            y + drawHeight * 50 / 64,
+            0.30, 0.30, 0.30, 1.0, UIFont.Medium)
+    end
+    if self.isShowingKeybinds then
+        local key = getCore():getKey('BardNote' .. note)
+        if key ~= nil then
+            local keybindText = getKeyName(key)
+            if keybindText ~= nil then
+                self:drawTextureScaled(textureKeybindBackground,
+                    x + SPACE_AROUND_WHITE_KEY + 4,
+                    y + drawHeight * 40 / 64,
+                    WHITE_KEY_TEXTURE_WIDTH - 8, 22, 1, 1, 1, 1)
+                self:drawTextCentre(keybindText,
+                    x + WHITE_KEY_WIDTH / 2,
+                    y + drawHeight * 41 / 64,
+                    0.35, 0.35, 0.35, 1.0, UIFont.Medium)
+            end
+        end
+    end
 end
 
 function PianoKeyboard:drawBlackKey(isPressed, x)
-    local texture = isPressed and self.textureKeyBlackPressed or self.textureKeyBlack
+    local textureKey
+    local textureKeybindBackground
+    local textureNoteBackground
+    if isPressed then
+        textureKey = self.textureKeyBlackPressed
+        textureKeybindBackground = self.textureKeyBlackHolePressed
+        textureNoteBackground = self.textureKeyBlackHoleRoundPressed
+    else
+        textureKey = self.textureKeyBlack
+        textureKeybindBackground = self.textureKeyBlackHole
+        textureNoteBackground = self.textureKeyBlackHoleRound
+    end
     local drawHeight = BLACK_KEY_HEIGHT
     if self:getMaxDrawHeight() > 0 then
         drawHeight = math.min(self:getMaxDrawHeight() - self:titleBarHeight(), BLACK_KEY_HEIGHT)
@@ -148,8 +238,37 @@ function PianoKeyboard:drawBlackKey(isPressed, x)
     if drawHeight <= 0 then
         return
     end
-    self:drawTextureScaled(texture, x + SPACE_AROUND_BLACK_KEY, self:titleBarHeight(),
+    local y = self:titleBarHeight()
+    self:drawTextureScaled(textureKey, x + SPACE_AROUND_BLACK_KEY, y,
         BLACK_KEY_TEXTURE_WIDTH, drawHeight, 1, 1, 1, 1)
+    local note = self:getWhiteKey(x, y)
+    if self.isShowingNotes then
+        self:drawTextureScaled(textureNoteBackground,
+            x + SPACE_AROUND_BLACK_KEY + 3,
+            y + drawHeight * 36 / 64,
+            BLACK_KEY_TEXTURE_WIDTH - 6,
+            20, 1, 1, 1, 1)
+        self:drawTextCentre(note,
+            x + BLACK_KEY_WIDTH / 2,
+            y + drawHeight * 39 / 64,
+            0.65, 0.65, 0.65, 1.0, UIFont.Small)
+    end
+    if self.isShowingKeybinds then
+        local key = getCore():getKey('BardNote' .. note)
+        if key ~= nil then
+            local keybindText = getKeyName(key)
+            if keybindText ~= nil then
+                self:drawTextureScaled(textureKeybindBackground,
+                    x + SPACE_AROUND_BLACK_KEY + 4,
+                    y + drawHeight * 22 / 64,
+                    BLACK_KEY_TEXTURE_WIDTH - 8, 22, 1, 1, 1, 1)
+                self:drawTextCentre(keybindText,
+                    x + BLACK_KEY_WIDTH / 2,
+                    y + drawHeight * 25 / 64,
+                    0.65, 0.65, 0.65, 1.0, UIFont.Small)
+            end
+        end
+    end
 end
 
 function PianoKeyboard:pressKeyWithMouse(x, y)
@@ -336,6 +455,18 @@ function PianoKeyboard:markReleasedKey(keyName)
     if keyName == self.currentKeyPressed then
         self.currentKeyPressed = nil
     end
+end
+
+function PianoKeyboard:onShowNotesButton(button)
+    self.isShowingNotes = not self.isShowingNotes
+    self.showNotesButton:setImage(
+        self.isShowingNotes and self.showNotesOnImage or self.showNotesOffImage)
+end
+
+function PianoKeyboard:onShowKeybindsButton(button)
+    self.isShowingKeybinds = not self.isShowingKeybinds
+    self.showKeybindsButton:setImage(
+        self.isShowingKeybinds and self.showKeybindsOnImage or self.showKeybindsOffImage)
 end
 
 function PianoKeyboard:onDistortionButton(button)

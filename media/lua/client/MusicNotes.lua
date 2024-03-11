@@ -1,7 +1,4 @@
 local MusicNotes = {
-    'A',
-    'As',
-    'B',
     'C',
     'Cs',
     'D',
@@ -11,6 +8,9 @@ local MusicNotes = {
     'Fs',
     'G',
     'Gs',
+    'A',
+    'As',
+    'B',
 }
 
 return MusicNotes
