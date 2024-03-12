@@ -1,5 +1,9 @@
 SurvivalGuide_EN {
-    SurvivalGuide_BardInteractiveMusic =    " <H1> BARD INTERACTIVE MUSIC <BR> " ..
+    SurvivalGuide_BardInteractiveMusic =    " <H1> BARD INTERACTIVE MUSIC <BR>" ..
                                             " <TEXT> <SIZE:small>" ..
-                                            " When playing with electrical instruments you can click the thunder icon on the window title bar to enable or disable the distorsion.",
+                                            " <CENTRE> v1.1.0 <BR>" ..
+                                            " <TEXT> <SIZE:medium>" ..
+                                            " <IMAGE:media/ui/keybind-off-icon.png> Show keybinds on the virtual keyboard <BR>" ..
+                                            " <IMAGE:media/ui/note-off-icon.png> Show notes on the virtual keyboard <BR>" ..
+                                            " <IMAGE:media/ui/thunder-off-icon.png> Toggle the distortion mod for the electric guitar",
 }
