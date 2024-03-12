@@ -1,4 +1,8 @@
 UI_EN = {
+    UI_trait_BardInteractiveMusician = "Musician",
+    UI_trait_BardInteractiveMusicianDesc = "As an accomplished musician you can play any instrument." ..
+                                           "Right click an intrument and use your keyboard to play notes from C2 to C5." ..
+                                           "More infos on the Bard Interactive Music mod page.",
     UI_optionscreen_binding_Bard = "Bard Interactive Music",
     UI_optionscreen_binding_BardNoteC2 = "Play C2",
     UI_optionscreen_binding_BardNoteCs2 = "Play C#2",

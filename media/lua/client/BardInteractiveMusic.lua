@@ -1,5 +1,6 @@
 local TAPlayMusicFromInventory = require 'TimedAction/TAPlayMusicFromInventory'
 local TAPlayMusicFromWorld = require 'TimedAction/TAPlayMusicFromWorld'
+local BardTrait = require 'BardTrait'
 
 local PlayerItemToActionName = {
     ['Base.GuitarAcoustic'] = 'ContextMenu_Bard_PlayAcousticGuitar',
@@ -31,19 +32,18 @@ end
 local function PlayerObjectContextMenu(playerIndex, context, items)
     local source = getSpecificPlayer(playerIndex)
 
-    for i = 1, #items do
-        local item
-        if type(items[1]) == 'table' then
-            item = items[1].items[1]
-        else
-            item = items[1]
-        end
-        if PlayerItemToActionName[item:getFullType()] ~= nil then
-            context:addOption(
-                getText(PlayerItemToActionName[item:getFullType()]),
-                source, ContextMenu.PlayInstrument, item)
-            break
-        end
+    local item
+    if type(items[1]) == 'table' then
+        item = items[1].items[1]
+    else
+        item = items[1]
+    end
+    if PlayerItemToActionName[item:getFullType()] ~= nil
+        and (not BardTrait.getInstance().enabled or getPlayer():HasTrait('BardInteractiveMusician'))
+    then
+        context:addOption(
+            getText(PlayerItemToActionName[item:getFullType()]),
+            source, ContextMenu.PlayInstrument, item)
     end
 end
 
@@ -120,7 +120,9 @@ end
 
 local function WorldObjectContextMenu(playerIndex, context, worldobjects, test)
     local addedContext = {}
-    if test then return end
+    if not BardTrait.getInstance().enabled or not getPlayer():HasTrait('BardInteractiveMusician') then
+        return
+    end
     local player = getSpecificPlayer(playerIndex)
     for _, worldobject in ipairs(worldobjects) do
         local square = worldobject:getSquare()

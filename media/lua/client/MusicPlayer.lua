@@ -1,6 +1,4 @@
----@version 5.1 Kahlua
-
-local MusicPlayer = ISBaseTimedAction:derive('MusicPlayer')
+local MusicPlayer = {}
 
 local instance = nil
 function MusicPlayer.getInstance()
