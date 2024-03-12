@@ -1,7 +1,7 @@
 SurvivalGuide_EN {
     SurvivalGuide_BardInteractiveMusic =    " <H1> BARD INTERACTIVE MUSIC <BR>" ..
                                             " <TEXT> <SIZE:small>" ..
-                                            " <CENTRE> v1.1.0 <BR>" ..
+                                            " <CENTRE> v1.1.1 <BR>" ..
                                             " <TEXT> <SIZE:medium>" ..
                                             " <IMAGE:media/ui/keybind-off-icon.png> Show keybinds on the virtual keyboard <BR>" ..
                                             " <IMAGE:media/ui/note-off-icon.png> Show notes on the virtual keyboard <BR>" ..
