@@ -23,11 +23,12 @@ local SCALE_WIDTH = WHITE_KEY_WIDTH * NOTES_IN_SCALE         -- width of a group
 
 local WIDTH = WHITE_KEY_WIDTH * NOTES_INCLUDED
 local HEIGHT = WHITE_KEY_HEIGHT + ISCollapsableWindow.TitleBarHeight()
-local X = getCore():getScreenWidth() / 2 - WIDTH / 2
-local Y = getCore():getScreenHeight() - HEIGHT - 75
+
 
 function PianoKeyboard:new(instrument, hasDistortion)
-    local o = ISCollapsableWindow:new(X, Y, WIDTH, HEIGHT);
+    local x = getCore():getScreenWidth() / 2 - WIDTH / 2
+    local y = getCore():getScreenHeight() - HEIGHT - 75
+    local o = ISCollapsableWindow:new(x, y, WIDTH, HEIGHT);
     setmetatable(o, self)
     self.__index = self
 
