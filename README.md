@@ -1,6 +1,6 @@
 # Bard Interactive Music
 
-A [Project Zomboid](https://projectzomboid.com) mod to play music with the keyboard.
+A [Project Zomboid](https://projectzomboid.com) mod to play music with the keyboard ([workshop link](https://steamcommunity.com/sharedfiles/filedetails/?id=3176639185)).
 
 ![Bard Interactive Music preview](poster.png)
 
@@ -12,6 +12,23 @@ A [Project Zomboid](https://projectzomboid.com) mod to play music with the keybo
 - Play from a virtual keyboard or press a key to play a note
 - Pianos are also supported with two different notes recording
 - Electric guitar has a distortion mod
+- You can use the [trait lock mod](https://steamcommunity.com/sharedfiles/filedetails/?id=3180045177) to limit the use of the mod to player who used points to get the Musician trait
+
+## How to help?
+
+# Bug report
+
+You can report bugs preferably on github. Whenever you report a bug make sure to include the version number that can be found by clicking the information icon (!) on the virtual keyboard.
+
+# Translation
+
+You can help by translating the mod in your native language. Check if there is a matching file for you language for [all of the _EN.txt files in here](media/lua/shared/Translate/EN). If not you can create new ones an either do a pull request or (if you don't know how to do that) create a ticket with your files attached to it.
+
+# Support
+
+You can support me on [Ko-Fi](https://ko-fi.com/johngood).
+
+[![Johngood's Ko-Fi page preview](https://storage.ko-fi.com/cdn/generated/zfskfgqnf/rest-9d389c30e71f6e197003a2f0e3969811-kd1k8yxc.jpg)](https://ko-fi.com/johngood)
 
 ## License
 
