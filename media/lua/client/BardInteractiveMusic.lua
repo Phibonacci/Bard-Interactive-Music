@@ -120,7 +120,7 @@ end
 
 local function WorldObjectContextMenu(playerIndex, context, worldobjects, test)
     local addedContext = {}
-    if not BardTrait.getInstance().enabled or not getPlayer():HasTrait('BardInteractiveMusician') then
+    if BardTrait.getInstance().enabled and not getPlayer():HasTrait('BardInteractiveMusician') then
         return
     end
     local player = getSpecificPlayer(playerIndex)
