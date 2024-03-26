@@ -73,9 +73,8 @@ function MusicPlayer:playNote(sourcePlayerId, instrument, note, isDistorted)
     local square = source:getSquare()
     local soundId = soundEmitter:playSoundImpl(instrumentNote, square)
     addSound(source, square:getX(), square:getY(), square:getZ(), 40, self.baseVolume)
-    -- I think this is useless as it's already set in the sound txt file but I'm too lazy to make sure
-    if isClient() and player:getOnlineID() ~= sourcePlayerId then
-        soundEmitter:set3D(soundId, true)
+    if not isClient() or player:getOnlineID() == sourcePlayerId then
+        soundEmitter:set3D(soundId, false)
     end
     self:setEmitterVolume(soundEmitter, soundId, self.baseVolume, sourcePlayerId)
 
