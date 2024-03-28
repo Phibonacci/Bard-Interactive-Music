@@ -128,14 +128,17 @@ local function WorldObjectContextMenu(playerIndex, context, worldobjects, test)
         local square = worldobject:getSquare()
         for i = 0, square:getObjects():size() - 1 do
             local item = square:getObjects():get(i)
-            local spriteName = item:getSprite():getName()
-            if WorldItemToActionInfo[spriteName] ~= nil then
-                -- for some unknown reason the pianos are listed twice so we filter the duplicate
-                if addedContext[item:getWorldObjectIndex()] == nil then
-                    addedContext[item:getWorldObjectIndex()] = true
-                    context:addOption(getText("ContextMenu_Bard_PlayPiano"), worldobjects,
-                        onPlayPiano,
-                        player, square, WorldItemToActionInfo[spriteName])
+            -- some items, like the "Premium Technologies Radio" when on the ground, don't have a sprite
+            if item:getSprite() ~= nil then
+                local spriteName = item:getSprite():getName()
+                if WorldItemToActionInfo[spriteName] ~= nil then
+                    -- for some unknown reason the pianos are listed twice so we filter the duplicate
+                    if addedContext[item:getWorldObjectIndex()] == nil then
+                        addedContext[item:getWorldObjectIndex()] = true
+                        context:addOption(getText("ContextMenu_Bard_PlayPiano"), worldobjects,
+                            onPlayPiano,
+                            player, square, WorldItemToActionInfo[spriteName])
+                    end
                 end
             end
         end
