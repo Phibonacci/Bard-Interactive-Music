@@ -1,6 +1,7 @@
 local TAPlayMusicFromInventory = require 'TimedAction/TAPlayMusicFromInventory'
 local TAPlayMusicFromWorld = require 'TimedAction/TAPlayMusicFromWorld'
 local BardTrait = require 'BardTrait'
+local BardClientSendCommands = require 'BardClientSendCommands'
 
 local PlayerItemToActionName = {
     ['Base.GuitarAcoustic'] = 'ContextMenu_Bard_PlayAcousticGuitar',
@@ -145,5 +146,19 @@ local function WorldObjectContextMenu(playerIndex, context, worldobjects, test)
     end
 end
 
+local lastAskedDataTime = GetCurrentTimeInMs() - 2000
+local function AskServerData()
+    local delta = GetCurrentTimeInMs() - lastAskedDataTime
+    if delta < 2000 then
+        return
+    end
+    lastAskedDataTime = GetCurrentTimeInMs()
+    if MusicPlayer.getInstance().range ~= nil then
+        Events.OnPostRender.Remove(AskServerData)
+    end
+    BardClientSendCommands.sendAskRange()
+end
+
 Events.OnPreFillInventoryObjectContextMenu.Add(PlayerObjectContextMenu)
 Events.OnPreFillWorldObjectContextMenu.Add(WorldObjectContextMenu)
+Events.OnPostRender.Add(AskServerData)

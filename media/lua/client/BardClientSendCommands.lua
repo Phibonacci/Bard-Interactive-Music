@@ -20,4 +20,9 @@ BardClientSendCommands.sendStopNote = function(sourceId, note)
         { sourceId = sourceId, note = note })
 end
 
+BardClientSendCommands.sendAskRange = function()
+    if not isClient() then return end
+    SendBardClientCommand('ClientAskRange', {})
+end
+
 return BardClientSendCommands

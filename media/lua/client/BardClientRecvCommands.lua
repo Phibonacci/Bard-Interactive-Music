@@ -12,6 +12,10 @@ BardClientRecvCommands['ServerSendEndNote'] = function(args)
     musicPlayer:stopNote(args.sourceId, args.note)
 end
 
+BardClientRecvCommands['ServerAnswerRange'] = function(args)
+    MusicPlayer.getInstance():setRange(args.SoundRange)
+end
+
 BardClientRecvCommands['ServerPrint'] = function(args)
     print('Server: ' .. args.message)
 end

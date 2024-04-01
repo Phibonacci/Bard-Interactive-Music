@@ -1,0 +1,12 @@
+VERSION = 1,
+
+option BardInteractiveMusic.SoundRange
+{
+	type = integer,
+	min = 1,
+	max = 10000,
+	default = 40,
+
+	page = BardInteractiveMusic,
+	translation = BardInteractiveMusic_SoundRange,
+}

@@ -16,7 +16,7 @@ BardServerCommands['ClientSendStartNote'] = function(player, args)
         local connectedPlayer = connectedPlayers:get(i)
         local playerOnlineId = connectedPlayer:getOnlineID()
         if playerOnlineId ~= args.sourceId
-            and connectedPlayer:DistTo(player:getX(), player:getY()) < 60 then
+            and connectedPlayer:DistTo(player:getX(), player:getY()) < SandboxVars.BardInteractiveMusic.SoundRange + 10 then
             SendBardServerCommand(connectedPlayer, 'ServerSendStartNote', args)
         end
     end
@@ -27,10 +27,16 @@ BardServerCommands['ClientSendEndNote'] = function(player, args)
     for i = 0, connectedPlayers:size() - 1 do
         local connectedPlayer = connectedPlayers:get(i)
         if connectedPlayer:getOnlineID() ~= args.sourceId
-            and connectedPlayer:DistTo(player:getX(), player:getY()) < 80 then
+            -- we want to make sure the player will receive the end of the note even with lag or when driving a fast vehicle
+            and connectedPlayer:DistTo(player:getX(), player:getY()) < SandboxVars.BardInteractiveMusic.SoundRange + 20 then
             SendBardServerCommand(connectedPlayer, 'ServerSendEndNote', args)
         end
     end
+end
+
+-- sends back the maximum range of instruments in tiles
+BardServerCommands['ClientAskRange'] = function(player, args)
+    SendBardServerCommand(player, 'ServerAnswerRange', { SoundRange = SandboxVars.BardInteractiveMusic.SoundRange })
 end
 
 local function OnClientCommand(module, command, player, args)

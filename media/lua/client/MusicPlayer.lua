@@ -34,7 +34,15 @@ function MusicPlayer:new()
     o.soundsStopping = {}
     o.baseVolume = 0.7
     o.maxDistance = 40 -- tiles
+    o.range = nil
+    if not isClient() then
+        self.range = SandboxVars.BardInteractiveMusic.SoundRange
+    end
     return o
+end
+
+function MusicPlayer:setRange(range)
+    self.range = range
 end
 
 local function GetFileName(instrument, note, isDistorted)
@@ -52,14 +60,18 @@ function MusicPlayer:setEmitterVolume(emitter, soundId, volume, sourceId)
     local modifiedVolume = volume
     if isClient() and player:getOnlineID() ~= sourceId then
         local distance = player:DistTo(source:getX(), source:getY())
-        modifiedVolume = math.max(0, volume - volume * (distance / 40))
+        modifiedVolume = math.max(0, volume - volume * (distance / self.range))
     end
     emitter:setVolume(soundId, modifiedVolume)
 end
 
 function MusicPlayer:playNote(sourcePlayerId, instrument, note, isDistorted)
+    if self.range == nil then
+        print('error: Bard Music Binding: sound range not set')
+        return
+    end
     local instrumentNote = GetFileName(instrument, note, isDistorted)
-    print('playing ' .. instrumentNote)
+    -- print('playing ' .. instrumentNote)
     assert(instrumentNote ~= nil, string.format("Unknown note %s", note))
 
     local player = getPlayer()
@@ -72,7 +84,7 @@ function MusicPlayer:playNote(sourcePlayerId, instrument, note, isDistorted)
     local soundEmitter = getWorld():getFreeEmitter()
     local square = source:getSquare()
     local soundId = soundEmitter:playSoundImpl(instrumentNote, square)
-    addSound(source, square:getX(), square:getY(), square:getZ(), 40, self.baseVolume)
+    addSound(source, square:getX(), square:getY(), square:getZ(), self.range, self.baseVolume)
     if not isClient() or player:getOnlineID() == sourcePlayerId then
         soundEmitter:set3D(soundId, false)
     end

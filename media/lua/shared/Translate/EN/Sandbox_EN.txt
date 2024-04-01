@@ -1,0 +1,3 @@
+Sandbox_EN = {
+    Sandbox_BardInteractiveMusic_SoundRange = "Maximum range in tiles at which the music can be heard",
+}
