@@ -1,3 +1,5 @@
+local BARD_INTERACTIVE_MUSIC_VERSION = require('BardInteractiveMusicVersion')
+
 local PianoKeyboard = ISCollapsableWindow:derive("PianoKeyboard");
 local MusicPlayer = require 'MusicPlayer'
 local BardClientSendCommands = require 'BardClientSendCommands'
@@ -71,7 +73,7 @@ function PianoKeyboard:initialise()
     ISCollapsableWindow.initialise(self)
     ISCollapsableWindow.createChildren(self)
 
-    self:setInfo(getText("SurvivalGuide_BardInteractiveMusic"))
+    self:setInfo(getText("SurvivalGuide_BardInteractiveMusic", BARD_INTERACTIVE_MUSIC_VERSION))
 
     local th = self:titleBarHeight()
 
