@@ -39,8 +39,11 @@ local function PlayerObjectContextMenu(playerIndex, context, items)
     else
         item = items[1]
     end
+    if item == nil or item:getFullType() == nil then
+        return
+    end
     if PlayerItemToActionName[item:getFullType()] ~= nil
-        and (not BardTrait.getInstance().enabled or getPlayer():HasTrait('BardInteractiveMusician'))
+        and (not BardTrait.getInstance().enabled or getPlayer():HasTrait(BardTrait.getTraitType()))
     then
         context:addOption(
             getText(PlayerItemToActionName[item:getFullType()]),
@@ -121,7 +124,7 @@ end
 
 local function WorldObjectContextMenu(playerIndex, context, worldobjects, test)
     local addedContext = {}
-    if BardTrait.getInstance().enabled and not getPlayer():HasTrait('BardInteractiveMusician') then
+    if BardTrait.getInstance().enabled and not getPlayer():HasTrait(BardTrait.getTraitType()) then
         return
     end
     local player = getSpecificPlayer(playerIndex)

@@ -1,0 +1,18 @@
+module BardInteractiveMusic
+{
+    imports
+    {
+        Base
+    }
+
+    item MusicTextBook
+    {
+        Weight = 0.1,
+		Type = Literature,
+        DisplayName	= Music Textbook,
+        Icon = MagazineBlacksmith3,
+        StaticModel = ArmorMag2_Reading,
+        WorldStaticModel = MagazineGround,
+        DisplayCategory = SkillBook,
+    }
+}

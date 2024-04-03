@@ -1,4 +1,5 @@
 ContextMenu_EN = {
+    ContextMenu_Bard_ReadMusicTextbook = "Learn the art of music",
     ContextMenu_Bard_PlayAcousticGuitar = "Play Acoustic Guitar",
     ContextMenu_Bard_PlayBanjo = "Play Banjo",
     ContextMenu_Bard_PlayElectricGuitar = "Play Electric Guitar",

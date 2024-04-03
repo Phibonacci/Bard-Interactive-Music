@@ -9,6 +9,10 @@ function BardTrait.getInstance()
     return instance
 end
 
+function BardTrait.getTraitType()
+    return 'BardInteractiveMusician'
+end
+
 function BardTrait:new()
     assert(instance == nil,
         'BardTrait is a singleton, call getInstance instead')
@@ -34,12 +38,12 @@ end
 
 function BardTrait:initTrait()
     if self.enabled then
-        TraitFactory.addTrait('BardInteractiveMusician',     -- In code name to refere that trait
+        TraitFactory.addTrait(self.getTraitType(),           -- In code name to refere that trait
             getText('UI_trait_BardInteractiveMusician'),     -- Trait name in game
             self.cost,                                       -- Cost of the trait, can be positive or negative
             getText('UI_trait_BardInteractiveMusicianDesc'), -- Description of the trait
-            false,                                           -- Linked to prof, seems to not be used
-            false)                                           -- Remove for MP server
+            false                                            -- Linked to prof, seems to not be used
+        )                                                    -- Remove for MP server
     end
 end
 
