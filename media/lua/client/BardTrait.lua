@@ -42,8 +42,8 @@ function BardTrait:initTrait()
             getText('UI_trait_BardInteractiveMusician'),     -- Trait name in game
             self.cost,                                       -- Cost of the trait, can be positive or negative
             getText('UI_trait_BardInteractiveMusicianDesc'), -- Description of the trait
-            false                                            -- Linked to prof, seems to not be used
-        )                                                    -- Remove for MP server
+            false,                                           -- Linked to prof, seems to not be used
+            false)                                           -- Remove for MP server
     end
 end
 
